@@ -107,28 +107,28 @@ export const AirlinesSection = () => {
               </a>
             </div>
           </div>
-
+          {/* <Image src="/assets/images" alt="" width={100} height={100}/> */}
           {/* Right Column */}
           <div className="max-sm:hidden w-2/5 relative">
             {[
               {
-                src: "klm.svg",
+                src: "c6.webp",
                 top: "top-24   md:ltr:-left-[5rem] md:ltr:-right-[5rem] ",
               },
               {
-                src: "airasia.svg",
+                src: "C4.webp",
                 top: "top-[2rem] ltr:left-[10rem] ltr:md:left-[5rem] rtl:right-[10rem] rtl:md:right-[8rem]",
               },
               {
-                src: "qatar.svg",
+                src: "C5.png",
                 top: "top-[5rem] ltr:left-[8rem] ltr:md:left-[10rem] rtl:right-[8rem] rtl:md:right-[10rem]",
               },
               {
-                src: "iberia.svg",
+                src: "C11.png",
                 top: "top-[-5rem] ltr:left-[15rem] rtl:right-[15rem]",
               },
               {
-                src: "emirates.svg",
+                src: "C20.png",
                 top: "top-[-3rem] ltr:md:left-[0] rtl:md:right-[0]",
               },
             ].map((airline, index) => (
@@ -137,7 +137,7 @@ export const AirlinesSection = () => {
                   alt="airline"
                   loading="lazy"
                   decoding="async"
-                  src={`https://onwardticket.com/static/img/landing/airlines/desktop/${airline.src}`}
+                  src={`/assets/images/logos/${airline.src}`}
                   className="w-[100px] h-[65px]"
                 />
               </div>
