@@ -63,6 +63,18 @@
     },
     "testimonials": {
         "title": "Trusted by thousands of travelers since 2019",
-        "subtitle": "Onward Ticket™ helps thousands of travelers enjoy their adventures with less stress & more freedom."
+        "subtitle": "Onward Ticket™ helps thousands of travelers enjoy their adventures with less stress & more freedom.",
+        "slider": {
+            "slide1": {
+                "name": "Abdulrahman Al-Omran",
+                "title": "Marketing Inspiration",
+                "content": "Samir is one of my inspirations in the field of marketing, and he always amazes me with his way of thinking and his incredible ability to solve problems and explore. This thread is valuable for anyone passionate about marketing."
+            },
+            "slide2": {
+                "name": "Hamad bin Fahad",
+                "title": "Traveler",
+                "content": "Samir is one of my inspirations in the field of marketing, and he always amazes me with his way of thinking and his incredible ability to solve problems and explore. This thread is valuable for anyone passionate about marketing."
+            }
+        }
     }
 }

@@ -14,256 +14,192 @@ import "./styles.css";
 import { Pagination, Navigation } from "swiper/modules";
 import { ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 export default function Slider2() {
   const t = useTranslations("testimonials");
-  return (
-    <div className="container max-w-screen-lg mx-auto overflow-visible mt-80">
-      {/* Title */}
-      <div className="flex items-center text-4xl sm:text-[40px] font-extrabold space-x-4 max-sm:text-center">
-        <span>{t("title")}</span>
-      </div>
+  const dir = usePathname().includes("ar") ? "rtl" : "ltr";
 
-      {/* Subtitle */}
-      <div className="text-2xl pb-6 pt-4 max-sm:text-center text-balance">
-        <span>{t("subtitle")}</span>
-      </div>
-      <Swiper
-        slidesPerView={"auto"}
-        spaceBetween={30}
-        // pagination={{
-        //   clickable: true,
-        //   el: ".swiper-pagination",
-        // }}
-        navigation={{
-          nextEl: ".next-btn",
-          prevEl: ".prev-btn",
-        }}
-        modules={[Pagination, Navigation]}
-        className="mySwiper text-blue-dark"
-        dir="rtl"
+  return (
+    <div className="container mx-auto px-5">
+      <div
+        className="w-full max-w-screen-lg mx-auto overflow-visible mt-80"
+        dir={dir}
       >
-        <SwiperSlide className="!bg-transparent">
-          {/* left */}
-          <div
-            role="group"
-            aria-roledescription="slide"
-            className="min-w-0 shrink-0 grow-0 pl-4"
-          >
-            <div className="h-[25rem] w-[18rem] rounded-xl">
-              <div className="rounded-xl relative w-full">
-                <div
-                  className="rounded-xl overflow-hidden flex items-center justify-center"
-                  style={{
-                    background:
-                      "url(/assets/images/image01.jpg) center center / cover no-repeat",
-                    width: "18rem",
-                    height: "32rem",
-                  }}
-                >
+        {/* Title */}
+        <div className="flex items-center text-4xl sm:text-[40px] font-extrabold space-x-4 max-sm:text-center">
+          <span>{t("title")}</span>
+        </div>
+
+        {/* Subtitle */}
+        <div className="text-2xl pb-6 pt-4 max-sm:text-center text-balance">
+          <span>{t("subtitle")}</span>
+        </div>
+        <Swiper
+          slidesPerView={"auto"}
+          spaceBetween={0}
+          navigation={{
+            nextEl: ".next-btn",
+            prevEl: ".prev-btn",
+          }}
+          modules={[Pagination, Navigation]}
+          className="mySwiper text-blue-dark"
+        >
+          <SwiperSlide className="!bg-transparent">
+            {/* left */}
+            <div
+              role="group"
+              aria-roledescription="slide"
+              className="min-w-0 shrink-0 grow-0"
+            >
+              <div className="h-[25rem] w-[18rem] rounded-xl">
+                <div className="rounded-xl relative w-full">
                   <div
-                    className="absolute w-full h-full flex justify-center items-center z-40 rounded-xl"
+                    className="rounded-xl overflow-hidden flex items-center justify-center"
                     style={{
                       background:
-                        "linear-gradient(180deg, rgba(30, 30, 30, 0.00) 57%, #1E1E1E 100%), transparent 50% / cover no-repeat",
+                        "url(/assets/images/image01.jpg) center center / cover no-repeat",
+                      width: "18rem",
+                      height: "32rem",
                     }}
                   >
-                    {/* <button className="w-full h-full">
-                      <div className="flex justify-center items-center">
-                        <div className="bg-white bg-opacity-30 backdrop-blur rounded-full px-4 py-4">
-                          <div className="relative w-4 h-4">
-                            <img
-                              alt="play"
-                              loading="lazy"
-                              decoding="async"
-                              className="absolute inset-0 w-full h-full"
-                              src="/static/img/play.svg"
-                            />
+                    <div
+                      className="absolute w-full h-full flex justify-center items-center z-40 rounded-xl"
+                      style={{
+                        background:
+                          "linear-gradient(180deg, rgba(30, 30, 30, 0.00) 57%, #1E1E1E 100%), transparent 50% / cover no-repeat",
+                      }}
+                    >
+                      <div className="h-full absolute top-[67%] text-white font-semibold px-3 z-10 text-left w-full">
+                        <div className="flex space-x-3 items-center pt-2">
+                          <div className="rounded-full px-2 py-0.5 bg-pink-500 bg-opacity-50">
+                            ako_858
                           </div>
+                          <div>@abdom</div>
                         </div>
                       </div>
-                    </button> */}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="!bg-transparent">
+            {/* right */}
+            <div
+              role="group"
+              aria-roledescription="slide"
+              className="min-w-0 shrink-0 grow-0 rtl:text-right rtl:pl-4"
+            >
+              <div className="bg-green-extralight rounded-2xl shadow-sm border-2 border-pink-light p-6 w-[18rem] h-[25rem] flex-1 flex flex-col">
+                <div className="flex pb-3 space-x-1">
+                  {[...Array(5)].map((_, index) => (
+                    <div key={index} className="relative w-4 h-4">
+                      <img
+                        alt="star"
+                        loading="lazy"
+                        decoding="async"
+                        className="absolute inset-0 w-full h-full"
+                        src="/assets/images/star.svg"
+                      />
+                    </div>
+                  ))}
+                </div>
+                <a className="flex flex-col justify-between flex-1">
+                  <div className="text-base">{t("slider.slide1.content")}</div>
+                  <div className="font-bold text-sm flex  gap-2 w-full">
+                    <div className="relative w-5 h-5">
+                      <span className="bg-[#FFCBF0] absolute inset-0 w-full h-full rounded-full"></span>
+                    </div>{" "}
+                    <span>{t("slider.slide1.name")} </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="!bg-transparent ml-4 rtl:ml-0">
+            {/* left */}
+            <div className="h-[25rem] w-[18rem] rounded-xl">
+              <div className="rounded-xl relative w-full aspect-[16/9]">
+                <div
+                  className="rounded-xl overflow-hidden w-[18rem] h-[25rem] flex items-center justify-center"
+                  style={{
+                    backgroundImage: "url(/assets/images/fahed.png) ",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  <div className="rounded-xl absolute w-full h-full flex justify-center items-center z-40 bg-gradient-to-b from-transparent via-transparent to-[#1E1E1E]">
                     <div className="absolute bottom-5 text-white font-semibold px-6 z-10 text-left w-full">
                       <div className="flex space-x-3 items-center pt-2">
-                        <div className="rounded-full px-2 py-0.5 bg-pink-500 bg-opacity-50">
-                        ako_858
+                        <div className="rounded-full px-2 py-0.5 bg-pink bg-opacity-50">
+                          🇨🇴
                         </div>
-                        <div>@iHamadFahad7</div>
-
+                        <a
+                          rel="nofollow"
+                          target="_blank"
+                          className="z-10"
+                          href="https://www.instagram.com/viejaqueviaja/"
+                        >
+                          <div>@iHamadFahad7</div>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          {/* right */}
-          <div
-            role="group"
-            aria-roledescription="slide"
-            className="min-w-0 shrink-0 grow-0 pl-4 text-right"
-          >
-            <div className="bg-green-extralight rounded-2xl shadow-sm border-2 border-pink-light p-6 w-[18rem] h-[25rem]">
-              <div className="flex pb-3 space-x-1">
-                {[...Array(5)].map((_, index) => (
-                  <div key={index} className="relative w-4 h-4">
-                    <img
-                      alt="star"
-                      loading="lazy"
-                      decoding="async"
-                      className="absolute inset-0 w-full h-full"
-                      src="/assets/images/star.svg"
-                    />
-                  </div>
-                ))}
-              </div>
-              <a target="_blank" href="/">
-                <div className="text-xl pt-4 font-medium text-right">
-                سمير من الملهمين لي في مجال التسويق ودايم يبهرني بطريقة تفكيره وقدرته المذهلة في حل المشاكل
-والاستكشاف.
-الثريد مفيد لأي شغوف في التسويق
-                </div>
-                <div className="font-bold text-sm flex items-center space-x-2 fixed bottom-8 w-full  text-right">
-                <span>عبدالرحمن العمران </span>
-
-                  <div className="relative w-5 h-5">
-                    <span className="bg-[#FFCBF0] absolute inset-0 w-full h-full rounded-full"></span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="!bg-transparent">
-          {/* left */}
-          <div className="h-[25rem] w-[18rem] rounded-xl">
-            <div className="rounded-xl relative w-full aspect-[16/9]">
-              <div
-                className="rounded-xl overflow-hidden w-[18rem] h-[25rem] flex items-center justify-center"
-                style={{
-                  backgroundImage:
-                  "url(/assets/images/fahed.png) ",
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                  backgroundRepeat: "no-repeat",
-                }}
-              >
-                <div className="rounded-xl absolute w-full h-full flex justify-center items-center z-40 bg-gradient-to-b from-transparent via-transparent to-[#1E1E1E]">
-                  {/* <button className="w-full h-full">
-                    <div className="flex justify-center items-center">
-                      <div className="bg-white bg-opacity-30 backdrop-blur rounded-full px-4 py-4">
-                        <div className="relative w-4 h-4">
-                          <img
-                            alt="play"
-                            loading="lazy"
-                            decoding="async"
-                            className="absolute inset-0 w-full h-full"
-                            src="/static/img/play.svg"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </button> */}
-                  <div className="absolute bottom-5 text-white font-semibold px-6 z-10 text-left w-full">
-                    <div className="flex space-x-3 items-center pt-2">
-                      <div className="rounded-full px-2 py-0.5 bg-pink bg-opacity-50">
-                        🇨🇴
-                      </div>
-                      <a
-                        rel="nofollow"
-                        target="_blank"
-                        className="z-10"
-                        href="https://www.instagram.com/viejaqueviaja/"
-                      >
-                        <div>@iHamadFahad7</div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </SwiperSlide>
+          <SwiperSlide className="!bg-transparent">
+            {/* right */}
             <div
-              role="alert"
-              className="absolute inset-4 bottom-auto p-3 bg-[rgba(240,240,240,0.7)] border border-gray-700 rounded-xl transition-opacity duration-250"
-              hidden
+              role="group"
+              aria-roledescription="slide"
+              className="min-w-0 shrink-0 grow-0 rtl:text-right rtl:ml-4"
             >
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                <path
-                  d="M8.4449 0.608765C8.0183 -0.107015 6.9817 -0.107015 6.55509 0.608766L0.161178 11.3368C-0.275824 12.07 0.252503 13 1.10608 13H13.8939C14.7475 13 15.2758 12.07 14.8388 11.3368L8.4449 0.608765ZM7.4141 1.12073C7.45288 1.05566 7.54712 1.05566 7.5859 1.12073L13.9798 11.8488C14.0196 11.9154 13.9715 12 13.8939 12H1.10608C1.02849 12 0.980454 11.9154 1.02018 11.8488L7.4141 1.12073ZM6.8269 4.48611C6.81221 4.10423 7.11783 3.78663 7.5 3.78663C7.88217 3.78663 8.18778 4.10423 8.1731 4.48612L8.01921 8.48701C8.00848 8.766 7.7792 8.98664 7.5 8.98664C7.2208 8.98664 6.99151 8.766 6.98078 8.48701L6.8269 4.48611ZM8.24989 10.476C8.24989 10.8902 7.9141 11.226 7.49989 11.226C7.08567 11.226 6.74989 10.8902 6.74989 10.476C6.74989 10.0618 7.08567 9.72599 7.49989 9.72599C7.9141 9.72599 8.24989 10.0618 8.24989 10.476Z"
-                  fill="currentColor"
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-              <h5 className="font-medium mb-1 pl-7">Upload in progress...</h5>
-              <div className="pl-7 text-sm leading-5">
-                Your video file is being uploaded. The currently loaded video is
-                the source file.
+              <div className="bg-green-extralight rounded-2xl shadow-sm border-2 border-pink-light p-6 w-[18rem] h-[25rem] flex flex-col">
+                <div className="flex pb-3 space-x-1">
+                  {[...Array(5)].map((_, index) => (
+                    <div key={index} className="relative w-4 h-4">
+                      <img
+                        alt="star"
+                        loading="lazy"
+                        decoding="async"
+                        className="absolute inset-0 w-full h-full"
+                        src="/assets/images/star.svg"
+                      />
+                    </div>
+                  ))}
+                </div>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.trustpilot.com/reviews/5e4b66703c93ae0bc4043e07"
+                  className="flex flex-col justify-between flex-1"
+                >
+                  <div className="text-base">{t("slider.slide2.content")}</div>
+                  <div className="font-bold text-sm flex items-center gap-2 w-full">
+                    <div className="relative w-5 h-5">
+                      <span className="bg-[#FFCBF0] absolute inset-0 w-full h-full rounded-full"></span>
+                    </div>
+                    <span> {t("slider.slide2.name")} </span>
+                  </div>
+                </a>
               </div>
             </div>
-          </div>
-
-          {/* right */}
-
-          <div
-            role="group"
-            aria-roledescription="slide"
-            className="min-w-0 shrink-0 grow-0 pl-4"
-          >
-            {/* Card */}
-            <div className="bg-green-extralight rounded-2xl shadow-sm border-2 border-pink-light p-6 w-[18rem] h-[25rem]">
-              {/* Star Ratings */}
-              <div className="flex pb-3 space-x-1">
-                {[...Array(5)].map((_, index) => (
-                  <div key={index} className="relative w-4 h-4">
-                    <img
-                      alt="star"
-                      loading="lazy"
-                      decoding="async"
-                      className="absolute inset-0 w-full h-full"
-                      src="/assets/images/star.svg"
-                    />
-                  </div>
-                ))}
-              </div>
-              {/* Review Content */}
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.trustpilot.com/reviews/5e4b66703c93ae0bc4043e07"
-              >
-                {/* Title */}
-                <div className="font-semibold text-lg text-left">
-                سمير من الملهمين لي في مجال التسويق ودايم يبهرني بطريقة تفكيره وقدرته المذهلة في حل المشاكل
-والاستكشاف.
-الثريد مفيد لأي شغوف في التسويق
-                </div>
-                {/* Review Text */}
-              
-                {/* Reviewer Info */}
-                <div className="font-bold text-sm flex items-center space-x-2 fixed bottom-8 w-full">
-                  <div className="relative w-5 h-5">
-                    <span className="bg-[#FFCBF0] absolute inset-0 w-full h-full rounded-full"></span>
-                  </div>
-                  <span>حمد بن فهد</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </SwiperSlide>
-
-       
-        <SwiperSlide className="!bg-transparent !justify-start">
-          {/* left */}
-          <div
-            role="group"
-            aria-roledescription="slide"
-            className="min-w-0 shrink-0 grow-0 pl-4"
-          >
-            <div className="h-[25rem] w-[18rem] rounded-xl">
-              <div className="rounded-xl next-video-container">
-                <style>
-                  {`
+          </SwiperSlide>
+          <SwiperSlide className="!bg-transparent !justify-start ml-4">
+            {/* left */}
+            <div
+              role="group"
+              aria-roledescription="slide"
+              className="min-w-0 shrink-0 grow-0 "
+            >
+              <div className="h-[25rem] w-[18rem] rounded-xl">
+                <div className="rounded-xl next-video-container">
+                  <style>
+                    {`
           .next-video-container {
             position: relative;
             width: 100%;
@@ -282,64 +218,48 @@ export default function Slider2() {
             object-position: var(--media-object-position, center);
           }
         `}
-                </style>
+                  </style>
 
-                <div
-                  style={{
-                    borderRadius: "1rem",
-                    overflow: "hidden",
-                    width: "18rem",
-                    height: "25rem",
-                    position: "relative",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    background: `url(https://image.mux.com/kcOK1jeWrAozF01Hz4UYNP02xn14qYJgz00xdaoOjrbtHg/thumbnail.png?time=0) center center / cover no-repeat`,
-                  }}
-                >
                   <div
-                    className="absolute w-full h-full flex justify-center items-center z-40"
                     style={{
-                      background:
-                        "linear-gradient(180deg, rgba(30, 30, 30, 0.00) 57%, #1E1E1E 100%), transparent 50% / cover no-repeat",
+                      borderRadius: "1rem",
+                      overflow: "hidden",
+                      width: "18rem",
+                      height: "25rem",
+                      position: "relative",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: `url(https://image.mux.com/kcOK1jeWrAozF01Hz4UYNP02xn14qYJgz00xdaoOjrbtHg/thumbnail.png?time=0) center center / cover no-repeat`,
                     }}
                   >
-                    {/* <button className="w-full h-full">
-                      <div className="flex justify-center items-center">
-                        <div className="bg-white bg-opacity-30 backdrop-blur rounded-full px-4 py-4">
-                          <div className="relative w-4 h-4">
-                            <img
-                              alt="play"
-                              loading="lazy"
-                              decoding="async"
-                              className="absolute inset-0 w-full h-full"
-                              src="/static/img/play.svg"
-                            />
+                    <div
+                      className="absolute w-full h-full flex justify-center items-center z-40"
+                      style={{
+                        background:
+                          "linear-gradient(180deg, rgba(30, 30, 30, 0.00) 57%, #1E1E1E 100%), transparent 50% / cover no-repeat",
+                      }}
+                    >
+                      <div className="absolute bottom-5 text-white font-semibold px-6 z-10 text-left w-full">
+                        <div className="flex space-x-3 items-center pt-2">
+                          <div className="rounded-full px-2 py-0.5 bg-pink bg-opacity-50">
+                            🇮🇳
                           </div>
+                          <a
+                            rel="nofollow"
+                            target="_blank"
+                            className="z-10"
+                            href="https://www.instagram.com/visatraveler/"
+                          >
+                            <div>@visatraveler</div>
+                          </a>
                         </div>
-                      </div>
-                    </button> */}
-
-                    <div className="absolute bottom-5 text-white font-semibold px-6 z-10 text-left w-full">
-                      <div className="flex space-x-3 items-center pt-2">
-                        <div className="rounded-full px-2 py-0.5 bg-pink bg-opacity-50">
-                          🇮🇳
-                        </div>
-                        <a
-                          rel="nofollow"
-                          target="_blank"
-                          className="z-10"
-                          href="https://www.instagram.com/visatraveler/"
-                        >
-                          <div>@visatraveler</div>
-                        </a>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <style>
-                  {`
+                  <style>
+                    {`
           .next-video-alert {
             position: absolute;
             inset: 1em;
@@ -379,33 +299,33 @@ export default function Slider2() {
             line-height: 1.25rem;
           }
         `}
-                </style>
+                  </style>
 
-                {/* Alert for Video Upload */}
-                {/* <div
+                  {/* Alert for Video Upload */}
+                  {/* <div
                   role="alert"
                   className="next-video-alert next-video-alert-ready"
-                  hidden=""
+                  hidden="true"
                 >
                   <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
                     <path
-                      d="M8.4449 0.608765C8.0183 -0.107015 6.9817 -0.107015 6.55509 0.608766L0.161178 11.3368C-0.275824 12.07 0.252503 13 1.10608 13H13.8939C14.7475 13 15.2758 12.07 14.8388 11.3368L8.4449 0.608765ZM7.4141 1.12073C7.45288 1.05566 7.54712 1.05566 7.5859 1.12073L13.9798 11.8488C14.0196 11.9154 13.9715 12 13.8939 12H1.10608C1.02849 12 0.980454 11.9154 1.02018 11.8488L7.4141 1.12073ZM6.8269 4.48611C6.81221 4.10423 7.11783 3.78663 7.5 3.78663C7.88217 3.78663 8.18778 4.10423 8.1731 4.48612L8.01921 8.48701C8.00848 8.766 7.7792 8.98664 7.5 8.98664C7.2208 8.98664 6.99151 8.766 6.98078 8.48701L6.8269 4.48611ZM8.24989 10.476C8.24989 10.8902 7.9141 11.226 7.49989 11.226C7.08567 11.226 6.74989 10.8902 6.74989 10.476C6.74989 10.0618 7.08567 9.72599 7.49989 9.72599C7.9141 9.72599 8.24989 10.0618 8.24989 10.476Z"
-                      fill="currentColor"
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                    ></path>
+                      d="M8.4449 0.608765C8.0183 -0.107015 6.9817 -0.107015 6.55509 0.608766L0.161178 11.3368C-0.275824 12.07 0.252503 13 1.10608 13H13.8939C14.7475 13 15.2758 12.07 14.8388 11.3368L8.4449 0.608765ZM7.4141 1.12073C7.45288 1.05566 7.54712 1.05566 7.5859 1.12073L13.9798 11.8488C14.0196 11.9154 13.9715 12 13.8939 12H1.10608C1.02849 12 0.980416 11.9154 1.02021 11.8488L7.4141 1.12073Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M8.23656 4.56674L9.18144 7.18595L10.8885 7.92846L9.52903 9.01854L9.2178 10.8212L8.23656 9.62296L7.25531 10.8212L6.94409 9.01854L5.58459 7.92846L7.29168 7.18595L8.23656 4.56674Z"
+                      fill="white"
+                    />
                   </svg>
-                  <h5>Upload in progress...</h5>
-                  <div>
-                    Your video file is being uploaded. The currently loaded
-                    video is the source file.
-                  </div>
+                  <h5>{t("video_completition_title")}</h5>
+                  <div>{t("video_completition_text")}</div>
                 </div> */}
+                </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+          </SwiperSlide>
+        </Swiper>
+      </div>
       <Navigations />
     </div>
   );
@@ -415,15 +335,15 @@ function Navigations() {
   const swiper = useSwiper();
 
   return (
-    <div className="max-w-screen-lg space-x-3 pt-4 flex items-center  rtl:flex-row-reverse ">
+    <div className="max-w-screen-lg mx-auto gap-3 pt-4 flex items-center">
       {/* Left Arrow Button */}
       <button
         onClick={() => swiper?.slidePrev()}
-        className="prev-btn bg-primary text-blue-dark font-extrabold uppercase hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-green focus:ring-opacity-50 group px-5 py-3 relative rounded-full h-10 w-10 transition-all disabled:cursor-not-allowed "
+        className="prev-btn bg-primary text-blue-dark font-extrabold uppercase hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-green focus:ring-opacity-50 group px-5 py-3 relative rounded-full h-10 w-10 transition-all disabled:cursor-not-allowed ltr:rotate-180"
       >
         <div className="flex justify-center">
           <div className="absolute top-3 w-4 h-4">
-            <ChevronRight className="absolute inset-0 w-full h-full rotate-180" />
+            <ChevronRight className="absolute inset-0 w-full h-full" />
           </div>
         </div>
       </button>
@@ -431,7 +351,7 @@ function Navigations() {
       {/* Right Arrow Button */}
       <button
         onClick={() => swiper?.slideNext()}
-        className="next-btn bg-primary  text-blue-dark font-extrabold uppercase hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-green focus:ring-opacity-50 group px-5 py-3 relative rounded-full h-10 w-10 transition-all disabled:cursor-not-allowed "
+        className="next-btn bg-primary  text-blue-dark font-extrabold uppercase hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-green focus:ring-opacity-50 group px-5 py-3 relative rounded-full h-10 w-10 transition-all disabled:cursor-not-allowed  rtl:rotate-180"
       >
         <div className="flex justify-center">
           <div className="absolute top-3 w-4 h-4">

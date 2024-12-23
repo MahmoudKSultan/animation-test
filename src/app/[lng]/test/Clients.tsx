@@ -109,11 +109,11 @@ export const AirlinesSection = () => {
           </div>
           {/* <Image src="/assets/images" alt="" width={100} height={100}/> */}
           {/* Right Column */}
-          <div className="max-sm:hidden w-2/5 relative">
+          <div className="max-sm:hidden w-2/5 relative -mt-16">
             {[
               {
                 src: "c6.webp",
-                top: "top-24   md:ltr:-left-[5rem] md:ltr:-right-[5rem] ",
+                top: "top-[calc(100%)] lg:top-24   md:ltr:-left-[5rem] lg:rtl:right-[calc(100%-100px)] ",
               },
               {
                 src: "C4.webp",
@@ -125,14 +125,14 @@ export const AirlinesSection = () => {
               },
               {
                 src: "C11.png",
-                top: "top-[-5rem] ltr:left-[15rem] rtl:right-[15rem]",
+                top: "top-[-5rem] ltr:left-[15rem] rtl:right-0",
               },
               {
                 src: "C20.png",
                 top: "top-[-3rem] ltr:md:left-[0] rtl:md:right-[0]",
               },
             ].map((airline, index) => (
-              <div className={`relative ${airline.top}`} key={index}>
+              <div className={`relative w-fit ${airline.top}`} key={index}>
                 <img
                   alt="airline"
                   loading="lazy"
