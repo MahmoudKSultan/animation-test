@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Cairo } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 // import Container from "@/components/Container";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { LanguageProvider } from "@/components/LanguageChange";
+
+const cairo = Cairo({
+  variable: "--font-cairo",
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +38,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background`}
+        className={`ltr:${geistSans.variable} ltr:${geistMono.variable} ${cairo.className} antialiased bg-background`}
       >
         <NextIntlClientProvider messages={messages}>
           <div className="flex flex-col min-h-screen gap-20">
