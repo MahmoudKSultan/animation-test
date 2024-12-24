@@ -112,7 +112,7 @@ export const AirlinesSection = () => {
           <div className="max-sm:hidden w-2/5 relative -mt-16">
             {[
               {
-                src: "c6.webp",
+                src: "C6.webp",
                 top: "top-[calc(100%)] lg:top-24   md:ltr:-left-[5rem] lg:rtl:right-[calc(100%-100px)] ",
               },
               {
