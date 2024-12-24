@@ -113,7 +113,7 @@ export const AirlinesSection = () => {
             {[
               {
                 src: "C6.webp",
-                top: "top-[calc(100%)] lg:top-20 md:ltr:-left-[5rem] lg:rtl:right-[calc(100%-100px)] ",
+                top: "top-[calc(100%)] lg:top-28 md:ltr:-left-[5rem] lg:rtl:right-[calc(100%-100px)] ",
               },
               {
                 src: "C4.webp",
