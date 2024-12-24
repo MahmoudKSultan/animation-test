@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="lg:w-1/3">
               <Link href="/#">
                 <img
-                  src="https://onwardticket.com/static/img/logo.svg"
+                  src="/assets/images/logos/main-logo.webp"
                   className="w-56 lg:border-b border-gray-500 pb-5"
                   alt="Onward Ticket"
                 />
