@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White - Default pure white background. */
+    --foreground: 0 0% 3.9%; /* Very Dark Gray (Near Black) - Used for high-contrast text on light backgrounds. */
+    --card: 0 0% 100%; /* White - Matches the background for seamless integration. */
+    --card-foreground: 0 0% 3.9%; /* Very Dark Gray (Near Black) - Ensures readable text on card elements. */
+    --popover: 0 0% 100%; /* White - Clear popover elements for light themes. */
+    --popover-foreground: 0 0% 3.9%; /* Very Dark Gray (Near Black) - Maintains text readability. */
+    --primary: 2 60% 36%; /* Crimson - A striking, bold red for primary interactive elements. */
+    --primary-foreground: 0 85.7% 97.3%; /* Off-White (Pinkish Tint) - Contrasts well with the primary color. */
+    --secondary: 0 0% 96.1%; /* Light Gray - Subtle and minimal for less emphasis. */
+    --secondary-foreground: 0 0% 9%; /* Dark Gray - Contrasts adequately for text elements. */
+    --muted: 0 0% 96.1%; /* Light Gray - Matches secondary for consistency. */
+    --muted-foreground: 0 0% 45.1%; /* Medium Gray - Less contrast but enough for de-emphasized text. */
+    --accent: 0 0% 96.1%; /* Light Gray - Versatile for accents with minimal attention. */
+    --accent-foreground: 0 0% 9%; /* Dark Gray - Stronger contrast for accent text. */
+    --destructive: 0 84.2% 60.2%; /* Bright Red - Emphasizes destructive actions like delete. */
+    --destructive-foreground: 0 0% 98%; /* White - High contrast for text on destructive elements. */
+    --border: 0 0% 89.8%; /* Very Light Gray - Subtle borders that don't dominate the design. */
+    --input: 0 0% 89.8%; /* Very Light Gray - Matches the border for cohesive input styling. */
+    --ring: 0 72.2% 50.6%; /* Crimson - Draws attention to focused elements. */
+    --radius: 0.5rem; /* Rounded corners for a softer look. */
+    --chart-1: 12 76% 61%; /* Light Coral - A warm and inviting chart color. */
+    --chart-2: 173 58% 39%; /* Medium Sea Green - A refreshing and calming chart color. */
+    --chart-3: 197 37% 24%; /* Teal - A muted, sophisticated chart color. */
+    --chart-4: 43 74% 66%; /* Green Yellow - Bright and attention-grabbing. */
+    --chart-5: 27 87% 67%; /* Light Goldenrod - A cheerful and sunny chart color. */
+  }
+
+  .dark {
+    --background: 0 0% 3.9%; /* Very Dark Gray (Near Black) - Ideal for dark themes. */
+    --foreground: 0 0% 98%; /* White - High contrast on dark backgrounds. */
+    --card: 0 0% 3.9%; /* Very Dark Gray (Near Black) - Matches the dark theme background. */
+    --card-foreground: 0 0% 98%; /* White - Ensures readable text on card elements. */
+    --popover: 0 0% 3.9%; /* Very Dark Gray (Near Black) - For dark-themed popovers. */
+    --popover-foreground: 0 0% 98%; /* White - Maintains readability. */
+    --primary: 2 60% 36%; /* Crimson - A bold color for primary actions in dark themes. */
+    --primary-foreground: 0 85.7% 97.3%; /* Off-White (Pinkish Tint) - Contrasts well with the primary color. */
+    --secondary: 0 0% 14.9%; /* Dark Gray - Subtle for less emphasis. */
+    --secondary-foreground: 0 0% 98%; /* White - High contrast for text elements. */
+    --muted: 0 0% 14.9%; /* Dark Gray - For muted elements in dark themes. */
+    --muted-foreground: 0 0% 63.9%; /* Light Gray - Less emphasis but still readable. */
+    --accent: 0 0% 14.9%; /* Dark Gray - Versatile for accents in dark themes. */
+    --accent-foreground: 0 0% 98%; /* White - Stronger contrast for accent text. */
+    --destructive: 0 62.8% 30.6%; /* Dark Red - Highlights destructive actions. */
+    --destructive-foreground: 0 0% 98%; /* White - High contrast for text on destructive elements. */
+    --border: 0 0% 14.9%; /* Dark Gray - Subtle borders for dark themes. */
+    --input: 0 0% 14.9%; /* Dark Gray - Matches the border for input elements. */
+    --ring: 0 72.2% 50.6%; /* Crimson - Draws attention to focused elements. */
+    --chart-1: 220 70% 50%; /* Dodger Blue - Vibrant and eye-catching. */
+    --chart-2: 160 60% 45%; /* Medium Aquamarine - A soothing chart color. */
+    --chart-3: 30 80% 55%; /* Orange - Bright and energetic. */
+    --chart-4: 280 65% 60%; /* Medium Orchid - Playful and dynamic. */
+    --chart-5: 340 75% 55%; /* Deep Pink - A vivid and striking chart color. */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  /* body {
+    @apply bg-background text-foreground;
+  } */
+}

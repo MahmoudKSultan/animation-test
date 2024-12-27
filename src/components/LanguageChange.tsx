@@ -9,6 +9,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { usePathname, useRouter } from "next/navigation"; // no need for usePathname here
+import Image from "next/image";
 
 export function LanguageChange() {
   const router = useRouter();
@@ -24,25 +25,39 @@ export function LanguageChange() {
 
   return (
     <Select defaultValue={language} onValueChange={handleLanguageChange}>
-      <SelectTrigger className="flex items-center rounded-full border-2 max-w-fit space-x-3 pr-2 cursor-pointer focus:ring-transparent">
-        <img
-          alt="Globe"
-          src="https://onwardticket.com/static/img/globe-language.svg"
-          className="py-2"
-        />
-        <p className="text-blue-dark bg-transparent font-bold">
+      <SelectTrigger className="flex items-center max-w-fit cursor-pointer focus:ring-transparent">
+        <p className="bg-transparent text-muted font-bold">
           <SelectValue />
         </p>
-        <img
-          alt="Chevron"
-          src="https://onwardticket.com/static/img/chevron-down-language.svg"
-        />
       </SelectTrigger>
-      <SelectContent>
+      <SelectContent className="w-fit">
         <SelectGroup>
-          <SelectItem value="en">English</SelectItem>
-          <SelectItem value="ar">عربي</SelectItem>
-          <SelectItem value="zh">中国人</SelectItem>
+          <SelectItem value="en">
+            <Image
+              src="/assets/images/flags/UK-flag.webp"
+              width={24}
+              height={16}
+              alt="uk flag"
+              className="w-6 h-4"
+            />
+          </SelectItem>
+          <SelectItem value="ar">
+            <Image
+              src="/assets/images/flags/SA-flag.webp"
+              width={24}
+              height={16}
+              alt=""
+            />
+          </SelectItem>
+          <SelectItem value="zh">
+            {" "}
+            <Image
+              src="/assets/images/flags/CH-flag.webp"
+              width={24}
+              height={16}
+              alt=""
+            />
+          </SelectItem>
         </SelectGroup>
       </SelectContent>
     </Select>
@@ -51,7 +66,7 @@ export function LanguageChange() {
 
 function useChangeLanguage() {
   const pathname = usePathname();
-  console.log(pathname);
+
   React.useEffect(() => {
     if (pathname.includes("ar")) {
       document.documentElement.lang = "ar";

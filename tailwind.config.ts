@@ -1,33 +1,28 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/features/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
       colors: {
-        primary: {
-          DEFAULT: "#D3FFAE",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        primaryDark: "#CDF8A9",
-        secondary: {
-          DEFAULT: "#e2edfb",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
+        background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        background: "#79E1D5",
-        blue: {
-          dark: "#1E368D",
-        },
-        green: {
-          extralight: "rgb(218 246 243)",
-        },
-        backgroundSecondary: "#DAF6F3",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
@@ -35,6 +30,14 @@ export default {
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
+        },
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -59,22 +62,8 @@ export default {
           "5": "hsl(var(--chart-5))",
         },
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
-
-// colors: {
-//   primary: "#D3FFAE",
-//   primaryDark: "#CDF8A9",
-//   secondary: "#e2edfb",
-//   // background: "var(--background)",
-//   foreground: "var(--foreground)",
-//   background: "#79E1D5",
-//   backgroundSecondary: "#DAF6F3",
-// },
+};
+export default config;
