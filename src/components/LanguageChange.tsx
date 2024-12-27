@@ -25,12 +25,12 @@ export function LanguageChange() {
 
   return (
     <Select defaultValue={language} onValueChange={handleLanguageChange}>
-      <SelectTrigger className="flex items-center max-w-fit cursor-pointer focus:ring-transparent">
+      <SelectTrigger className="flex items-center max-w-fit cursor-pointer focus:ring-transparent border-none">
         <p className="bg-transparent text-muted font-bold">
           <SelectValue />
         </p>
       </SelectTrigger>
-      <SelectContent className="w-fit">
+      <SelectContent className="w-fit  dark:bg-muted">
         <SelectGroup>
           <SelectItem value="en">
             <Image
@@ -39,6 +39,7 @@ export function LanguageChange() {
               height={16}
               alt="uk flag"
               className="w-6 h-4"
+              priority
             />
           </SelectItem>
           <SelectItem value="ar">
@@ -46,7 +47,8 @@ export function LanguageChange() {
               src="/assets/images/flags/SA-flag.webp"
               width={24}
               height={16}
-              alt=""
+              alt="saudi arabia flag"
+              priority
             />
           </SelectItem>
           <SelectItem value="zh">
@@ -55,7 +57,8 @@ export function LanguageChange() {
               src="/assets/images/flags/CH-flag.webp"
               width={24}
               height={16}
-              alt=""
+              alt="china flag"
+              priority
             />
           </SelectItem>
         </SelectGroup>

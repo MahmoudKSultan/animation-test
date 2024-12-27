@@ -1,5 +1,6 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 import { useRef } from "react";
 
 export const AirlinesSection = () => {
@@ -51,7 +52,7 @@ export const AirlinesSection = () => {
 
             {/* Buttons */}
             <div className="sm:pt-4 max-w-xs">
-              <a href="/form">
+              <Link href="/form">
                 <button className="bg-primary rounded-full text-blue-dark font-extrabold uppercase hover:bg-primaryDark focus:outline-none focus:ring-2 focus:ring-green focus:ring-opacity-50 group px-6 py-3 mt-4  w-full transition-all">
                   <div className="flex justify-center">
                     <div className="flex items-center relative">
@@ -77,7 +78,7 @@ export const AirlinesSection = () => {
                     </div>
                   </div>
                 </button>
-              </a>
+              </Link>
               <a target="_blank" href="/static/sample.pdf">
                 <button className="bg-transparent rounded-full text-blue-dark font-extrabold uppercase hover:bg-secondary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 border-2 border-blue-dark group px-6 py-3 mt-4  w-full transition-all">
                   <div className="flex justify-center">

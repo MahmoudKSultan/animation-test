@@ -37,27 +37,25 @@ const Footer = () => {
                     {t("footer.navigation.getHelp")}
                   </div>
                   <div className="text-sm flex flex-col">
-                    <a
-                      target="_self"
-                      className="no-underline hover:underline"
+                    <Link
                       href="/support#faq"
+                      className="no-underline hover:underline"
                     >
                       {t("footer.navigation.faqs")}
-                    </a>
-                    <a
-                      target="_self"
-                      className="no-underline hover:underline"
+                    </Link>
+                    <Link
                       href="/support"
+                      className="no-underline hover:underline"
                     >
                       {t("footer.navigation.contactSupport")}
-                    </a>
-                    <a
+                    </Link>
+                    <Link
+                      href="https://www.trustpilot.com/review/onwardticket.com"
                       target="_blank"
                       className="no-underline hover:underline"
-                      href="https://www.trustpilot.com/review/onwardticket.com"
                     >
                       {t("footer.navigation.trustpilotReviews")}
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -67,27 +65,24 @@ const Footer = () => {
                     {t("footer.navigation.about")}
                   </div>
                   <div className="text-sm flex flex-col">
-                    <a
-                      target="_self"
-                      className="no-underline hover:underline"
+                    <Link
                       href="/about"
+                      className="no-underline hover:underline"
                     >
                       {t("footer.navigation.whoWeAre")}
-                    </a>
-                    <a
-                      target="_self"
-                      className="no-underline hover:underline"
+                    </Link>
+                    <Link
                       href="/privacy-policy"
+                      className="no-underline hover:underline"
                     >
                       {t("footer.navigation.privacyPolicy")}
-                    </a>
-                    <a
-                      target="_self"
-                      className="no-underline hover:underline"
+                    </Link>
+                    <Link
                       href="/terms"
+                      className="no-underline hover:underline"
                     >
                       {t("footer.navigation.termsConditions")}
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -103,34 +98,34 @@ const Footer = () => {
                   </div>
                 </div>
 
-                {/* here */}
-                <div className="">
+                {/* Spread the Word */}
+                <div>
                   <div className="md:text-lg font-bold">
                     {t("footer.navigation.spreadTheWord")}
                   </div>
                   <div className="text-sm flex flex-col">
-                    <a
-                      target="_self"
-                      className="no-underline hover:underline"
+                    <Link
                       href="/affiliate"
+                      className="no-underline hover:underline"
                     >
                       {t("footer.navigation.affiliates")}
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
+                {/* Stay in Touch */}
                 <div className="max-sm:pb-4">
                   <div className="md:text-lg font-bold">
                     {t("footer.navigation.stayInTouch")}
                   </div>
                   <div className="text-sm flex flex-col">
-                    <a
+                    <Link
+                      href="https://blog.onwardticket.com"
                       target="_self"
                       className="no-underline hover:underline"
-                      href="https://blog.onwardticket.com"
                     >
                       {t("footer.navigation.blog")}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </nav>
@@ -153,27 +148,27 @@ const Footer = () => {
                   {t("footer.navigation.getHelp")}
                 </div>
                 <div className="text-sm flex flex-col">
-                  <a
+                  <Link
                     target="_self"
                     className="no-underline hover:underline"
                     href="/support#faq"
                   >
                     {t("footer.navigation.faqs")}
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     target="_self"
                     className="no-underline hover:underline"
                     href="/support"
                   >
                     {t("footer.navigation.contactSupport")}
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     target="_blank"
                     className="no-underline hover:underline"
                     href="https://www.trustpilot.com/review/onwardticket.com"
                   >
                     {t("footer.navigation.trustpilotReviews")}
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -183,27 +178,27 @@ const Footer = () => {
                   {t("footer.navigation.about")}
                 </div>
                 <div className="text-sm flex flex-col">
-                  <a
+                  <Link
                     target="_self"
                     className="no-underline hover:underline"
                     href="/about"
                   >
                     {t("footer.navigation.whoWeAre")}
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     target="_self"
                     className="no-underline hover:underline"
                     href="/privacy-policy"
                   >
                     {t("footer.navigation.privacyPolicy")}
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     target="_self"
                     className="no-underline hover:underline"
                     href="/terms"
                   >
                     {t("footer.navigation.termsConditions")}
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -213,13 +208,13 @@ const Footer = () => {
                   {t("footer.navigation.spreadTheWord")}
                 </div>
                 <div className="text-sm flex flex-col">
-                  <a
+                  <Link
                     target="_self"
                     className="no-underline hover:underline"
                     href="/affiliate"
                   >
                     {t("footer.navigation.affiliates")}
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -229,20 +224,23 @@ const Footer = () => {
                   {t("footer.navigation.stayInTouch")}
                 </div>
                 <div className="text-sm flex flex-col">
-                  <a
+                  <Link
                     target="_self"
                     className="no-underline hover:underline"
                     href="https://blog.onwardticket.com"
                   >
                     {t("footer.navigation.blog")}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="w-full border-t-[1px] border-gray-500">
               <div className="flex pt-4 items-center space-x-2">
                 <div className="font-bold text-lg">{t("footer.followUs")}</div>
-                <a target="_blank" href="https://www.tiktok.com/@onwardticket">
+                <Link
+                  target="_blank"
+                  href="https://www.tiktok.com/@onwardticket"
+                >
                   <img
                     alt="nav link"
                     loading="lazy"
@@ -253,14 +251,14 @@ const Footer = () => {
                     style={{ color: "transparent" }}
                     src="https://onwardticket.com/static/img/footer-tiktok.svg"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   target="_blank"
                   href="https://www.instagram.com/onwardticket/"
                   className="w-9 h-9 bg-[#cdebe7] rounded-full flex justify-center items-center"
                 >
                   <Instagram width="18" height="18" />
-                </a>
+                </Link>
               </div>
 
               <div className="mt-4 border-t border-gray-500 pt-5 lg:hidden text-center">
