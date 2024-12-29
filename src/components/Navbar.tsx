@@ -38,7 +38,7 @@ function Navbar() {
   return (
     <nav
       className={cn(`py-2 fixed duration-300 top-0 left-0 w-full z-50`, {
-        "bg-background dark:border-b dark:border-gray-800 shadow-sm":
+        "bg-background dark:border-b dark:border-gray-800 shadow-md":
           isScrolling,
       })}
     >

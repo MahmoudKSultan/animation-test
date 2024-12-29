@@ -63,3 +63,13 @@
     --chart-5: 340 75% 55%;
   }
 }
+
+.masked {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 20%,
+    black 90%,
+    transparent 100%
+  );
+}

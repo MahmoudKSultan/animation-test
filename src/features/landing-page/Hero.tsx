@@ -4,7 +4,7 @@ import React from "react";
 
 export function Hero() {
   return (
-    <div className="relative mb-48">
+    <div className="relative mb-0 md:mb-48">
       <video
         autoPlay
         loop

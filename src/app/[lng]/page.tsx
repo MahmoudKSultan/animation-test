@@ -1,11 +1,12 @@
 import React from "react";
-import { Clients, Hero } from "@/features/landing-page";
+import { Clients, Contact, Hero } from "@/features/landing-page";
 
 function Home() {
   return (
     <div>
       <Hero />
       <Clients />
+      <Contact />
     </div>
   );
 }
