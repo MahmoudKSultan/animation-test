@@ -1,5 +1,5 @@
 import React from "react";
-import { Clients, Contact, Hero } from "@/features/landing-page";
+import { Cards, Clients, Contact, Hero } from "@/features/landing-page";
 
 function Home() {
   return (
@@ -7,6 +7,7 @@ function Home() {
       <Hero />
       <Clients />
       <Contact />
+      <Cards />
     </div>
   );
 }

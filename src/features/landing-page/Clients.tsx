@@ -11,7 +11,7 @@ export function Clients() {
       <Container>
         <h2 className="text-4xl font-bold mb-10">Clients</h2>
       </Container>
-      <div className="hidden md:block relative px-5 masked">
+      <div className="hidden md:block relative px-5 masked" dir="ltr">
         <Marquee autoFill={true} speed={100} pauseOnHover>
           {logos.map((logo, idx) => (
             <Image
@@ -27,7 +27,7 @@ export function Clients() {
       </div>
 
       {/* mobile */}
-      <div className="md:hidden px-5 masked">
+      <div className="md:hidden px-5 masked" dir="ltr">
         {[0, 1, 2].map((n, idx) => {
           return (
             <Marquee
