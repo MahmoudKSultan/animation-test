@@ -1,4 +1,6 @@
 "use client";
+// import { useScroll, useTransform, motion } from "framer-motion";
+// import { useRef } from "react";
 import Container from "@/components/Container";
 import { logos } from "@/data/constants/clients-logos";
 import { useTranslations } from "next-intl";
@@ -7,9 +9,29 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 
 export function Clients() {
+  // cloud animation
+  // const firstCloudRef = useRef<HTMLDivElement>(null);
+  // const { scrollYProgress: cloudScrollYProgress } = useScroll({
+  //   target: firstCloudRef,
+  //   offset: ["start end", "end start"],
+  // });
+
+  // const firstCloudValue = useTransform(cloudScrollYProgress, [0, 1], [0, -300]);
+
+  // const secondCloudRef = useRef<HTMLDivElement>(null);
+  // const { scrollYProgress: secondCloudScrollYProgress } = useScroll({
+  //   target: secondCloudRef,
+  //   offset: ["start end", "end start"],
+  // });
+
+  // const secondCloudValue = useTransform(
+  //   secondCloudScrollYProgress,
+  //   [0, 1],
+  //   [0, 200]
+  // );
   const t = useTranslations("clients");
   return (
-    <div className="py-16">
+    <div className="relative py-16">
       <Container>
         <h2 className="text-4xl font-bold mb-10">{t("title")}</h2>
       </Container>
@@ -56,6 +78,38 @@ export function Clients() {
           );
         })}
       </div>
+
+      {/* Clouds */}
+      {/* <div className="max-sm:hidden">
+        <motion.div
+          className="absolute -right-[18rem] -bottom-5 -z-10"
+          style={{
+            y: firstCloudValue,
+          }}
+          ref={firstCloudRef}
+        >
+          <img
+            alt="cloud"
+            loading="lazy"
+            src="/assets/images/cloud.svg"
+            className="w-[700px] h-[200px]"
+          />
+        </motion.div>
+        <motion.div
+          className="absolute -left-[25rem] -top-5 -z-10"
+          ref={secondCloudRef}
+          style={{
+            y: secondCloudValue,
+          }}
+        >
+          <img
+            alt="cloud"
+            loading="lazy"
+            src="/assets/images/cloud.svg"
+            className="w-[700px] h-[200px]"
+          />
+        </motion.div>
+      </div> */}
     </div>
   );
 }
