@@ -13,6 +13,7 @@ import { LanguageChange } from "./LanguageChange";
 
 // Import the links array
 export const links = [
+  { href: "/", text: "main" },
   { href: "/our-story", text: "ourStory" },
   { href: "/board-of-directors", text: "boardOfDirectors" },
   { href: "/blog", text: "blog" },
