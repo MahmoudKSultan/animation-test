@@ -8,14 +8,14 @@ const Footer = () => {
 
   return (
     <div className="flex w-full justify-center container mx-auto">
-      <footer className="bg-primary min-h-footer text-blue-dark w-full max-w-screen-lg rounded-t-xl mx-5 text-white">
+      <footer className="min-h-footer bg-[#018000]/80 text-blue-dark w-full max-w-screen-lg rounded-t-xl mx-5 text-white">
         <div className="lg:flex px-8 pt-10 justify-between">
           <div className="lg:flex justify-between w-full">
             {/* Logo and Info */}
             <div className="lg:w-1/3">
               <Link href="/#">
                 <img
-                  src="/assets/images/logos/main-logo.webp"
+                  src="/assets/images/logos/main-logo.png"
                   className="w-56 lg:border-b border-gray-500 pb-5"
                   alt="Onward Ticket"
                 />

@@ -8,6 +8,7 @@ import { getMessages } from "next-intl/server";
 import { LanguageProvider } from "@/components/LanguageChange";
 import { ThemeProvider } from "@/providers";
 import Navbar from "@/components/Navbar";
+import ScrollTop from "@/components/ScrollTop";
 
 const cairo = Cairo({
   variable: "--font-cairo",
@@ -49,6 +50,7 @@ export default async function RootLayout({
               <main className="flex-1">{children}</main>
               <Footer />
             </div>
+            <ScrollTop />
             <LanguageProvider />
           </ThemeProvider>
         </NextIntlClientProvider>
