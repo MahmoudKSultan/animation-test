@@ -10,6 +10,10 @@ interface CardProps {
   color: string;
   i: number;
 }
+
+
+
+
 const Card = ({ title, description, src, url, color, i }: CardProps) => {
   return (
     <div className={styles.cardContainer}>
@@ -17,7 +21,7 @@ const Card = ({ title, description, src, url, color, i }: CardProps) => {
         className={styles.card}
         style={{ backgroundColor: color, top: `calc(-5vh + ${i * 25}px)` }}
       >
-        <h2>{title}</h2>
+        <h2>{title }</h2>
         <div className={styles.body}>
           <div className={styles.description}>
             <p>{description}</p>
