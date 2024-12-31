@@ -16,7 +16,7 @@ export const links = [
   { href: "/our-story", text: "ourStory" },
   { href: "/board-of-directors", text: "boardOfDirectors" },
   { href: "/blog", text: "blog" },
-  { href: "/contact-us", text: "contactUs" },
+  { href: "#contact", text: "contactUs" },
 ];
 
 function Navbar() {

@@ -8,7 +8,7 @@ import React from "react";
 export function Contact() {
   const t = useTranslations("contact-form");
   return (
-    <div className="py-16">
+    <div className="py-16 scroll-mt-10" id="contact">
       <Container>
         {/* <h2 className="text-4xl font-bold mb-10">Contact us</h2> */}
         <div className="flex flex-col md:flex-row items-center rounded-lg border dark:border-muted">
