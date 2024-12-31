@@ -1,4 +1,25 @@
 {
+    "hero": {
+        "vision": {
+            "title": "Vision",
+            "description": "Making Saudi Arabia the preferred tourist destination for the Chinese people"
+        },
+        "mission": {
+            "title": "Mission",
+            "description": "Attracting 10 million tourists annually from China to Saudi Arabia"
+        }
+    },
+    "clients": {
+        "title": "Clients"
+    },
+    "contact-form": {
+        "title": "Contact us today",
+        "subtitle": "Tell us about your project and we will get back to you",
+        "name_placeholder": "John Doe",
+        "email_placeholder": "example@mail.com",
+        "message_placeholder": "Your message here...",
+        "button": "Send"
+    },
     "testPage": {
         "clients": {
             "title": "Onward Ticket™ works with 100+ airlines",
@@ -6,7 +27,7 @@
             "see-sample": "ABOUT"
         },
         "reasons": {
-            "title": "More reasons you’ll love traveling with Onward Ticket™",
+            "title": "Our Fields of Work",
             "cardTitles": [
                 "Emerging Projects",
                 "Small Businesses",

@@ -48,8 +48,7 @@ export const Cards = () => {
     <div className="container mx-auto  px-5">
       <div className="w-full max-w-screen-lg  pb-36 pt-16 mx-auto">
         <div className="pb-14 text-4xl font-bold max-w-2xl">
-          {/* {t("testPage.reasons.title")} */}
-          مجالات عملنا
+          {t("testPage.reasons.title")}
         </div>
         <div className="flex flex-col flex-grow items-center w-full relative">
           {/* Plane Icon */}

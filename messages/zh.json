@@ -1,4 +1,25 @@
 {
+    "hero": {
+        "vision": {
+            "title": "愿景",
+            "description": "使沙特阿拉伯成为中国人民的首选旅游目的地"
+        },
+        "mission": {
+            "title": "使命",
+            "description": "每年吸引1000万中国游客前往沙特阿拉伯"
+        }
+    },
+    "clients": {
+        "title": "客户"
+    },
+    "contact-form": {
+        "title": "今天联系我们",
+        "subtitle": "告诉我们您的项目，我们将尽快回复您",
+        "name_placeholder": "姓名",
+        "email_placeholder": "example@mail.com",
+        "message_placeholder": "在这里输入您的消息...",
+        "button": "发送"
+    },
     "testPage": {
         "clients": {
             "title": "Onward Ticket™ 与 100多家航空公司合作",
@@ -6,7 +27,7 @@
             "see-sample": "关于网站"
         },
         "reasons": {
-            "title": "更多理由让你爱上与 Onward Ticket™ 一起旅行",
+            "title": "我们的工作领域",
             "cardTitles": [
                 "新兴项目",
                 "小型企业",

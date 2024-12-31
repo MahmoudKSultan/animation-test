@@ -6,9 +6,9 @@ function Home() {
     <div>
       <Hero />
       <Clients />
-      <Contact />
       <Cards />
       <Slider />
+      <Contact />
     </div>
   );
 }

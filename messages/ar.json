@@ -1,4 +1,25 @@
 {
+    "hero": {
+        "vision": {
+            "title": "الرؤية",
+            "description": "جعل السعودية وجهة سياحية مفضلة للشعب الصيني"
+        },
+        "mission": {
+            "title": "المهمة",
+            "description": "جذب 10 مليون سائح سنوياً من الصين إلى السعودية"
+        }
+    },
+    "clients": {
+        "title": "العملاء"
+    },
+    "contact-form": {
+        "title": "اتصل بنا اليوم",
+        "subtitle": "أخبرنا عن مشروعك وسنعود إليك",
+        "name_placeholder": "اسمك",
+        "email_placeholder": "example@mail.com",
+        "message_placeholder": "رسالتك هنا...",
+        "button": "إرسال"
+    },
     "testPage": {
         "clients": {
             "title": "تعمل وكالة الورقة الرقمية مع أكثر من 100+ شركة ",
@@ -6,7 +27,7 @@
             "see-sample": "حول المصنة "
         },
         "reasons": {
-            "title": "باقات الخدمات الوكالة الورقة الرقمية",
+            "title": "مجالات عملنا",
             "cardTitles": [
                 "المشاريع الناشئة",
                 "المشاريع الصغيرة",

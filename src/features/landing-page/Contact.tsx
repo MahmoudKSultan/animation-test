@@ -2,9 +2,11 @@ import Container from "@/components/Container";
 import { Button } from "@/components/ui";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 export function Contact() {
+  const t = useTranslations("contact-form");
   return (
     <div className="py-16">
       <Container>
@@ -21,15 +23,20 @@ export function Contact() {
             className="w-full h-52 rounded-lg sm:h-80 md:w-1/2 md:h-[500px] rounded-s-lg md:rounded-e-none"
           />
           <form className="md:w-1/2 p-8">
-            <h2 className="text-4xl font-bold">Contact us today</h2>
+            <h2 className="text-4xl font-bold">{t("title")}</h2>
             <p className="text-lg  mb-10 text-muted-foreground font-semibold">
-              Tell us about your project and we will get back to you{" "}
+              {t("subtitle")}
             </p>
             <div className="mb-5">
               <label htmlFor="name" className="sr-only">
                 Name
               </label>
-              <Input name="name" type="text" placeholder="John Doe" required />
+              <Input
+                name="name"
+                type="text"
+                placeholder={t("name_placeholder")}
+                required
+              />
             </div>
             <div className="mb-5">
               <label htmlFor="email" className="sr-only">
@@ -38,7 +45,7 @@ export function Contact() {
               <Input
                 name="email"
                 type="text"
-                placeholder="example@mail.com"
+                placeholder={t("email_placeholder")}
                 required
               />
             </div>
@@ -49,13 +56,13 @@ export function Contact() {
               <Textarea
                 rows={5}
                 name="message"
-                placeholder="your message here..."
+                placeholder={t("message_placeholder")}
                 required
               />
             </div>
 
             <Button type="submit" className="w-full text-white font-bold">
-              Send
+              {t("button")}
             </Button>
           </form>
         </div>

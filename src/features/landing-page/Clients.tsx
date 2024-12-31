@@ -1,15 +1,17 @@
 "use client";
 import Container from "@/components/Container";
 import { logos } from "@/data/constants/clients-logos";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 import Marquee from "react-fast-marquee";
 
 export function Clients() {
+  const t = useTranslations("clients");
   return (
     <div className="py-16">
       <Container>
-        <h2 className="text-4xl font-bold mb-10">Clients</h2>
+        <h2 className="text-4xl font-bold mb-10">{t("title")}</h2>
       </Container>
       <div className="hidden md:block relative px-5 masked" dir="ltr">
         <Marquee autoFill={true} speed={100} pauseOnHover>

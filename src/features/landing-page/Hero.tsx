@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 
@@ -20,6 +21,7 @@ export function Hero() {
 }
 
 const VisionMission = () => {
+  const t = useTranslations("hero");
   return (
     <div className="bg-primary md:w-2/3  py-12 md:py-8 mx-auto px-8 text-white relative md:absolute md:-bottom-40 left-1/2 -translate-x-1/2 md:rounded-lg">
       <Container>
@@ -35,10 +37,8 @@ const VisionMission = () => {
                 className="w-28 h-28 md:w-20 md:h-20"
               />
             </div>
-            <h2 className="text-2xl font-bold mb-2">المهمة</h2>
-            <p className="text-lg">
-              جذب ١٠ مليون سائح سنوياً من الصين إلى السعودية
-            </p>
+            <h2 className="text-2xl font-bold mb-2">{t("mission.title")}</h2>
+            <p className="text-lg">{t("mission.description")}</p>
           </div>
 
           {/* Vision Section */}
@@ -52,10 +52,8 @@ const VisionMission = () => {
                 className="w-28 h-28 md:w-20 md:h-20"
               />
             </div>
-            <h2 className="text-2xl font-bold mb-2">الرؤية</h2>
-            <p className="text-lg">
-              جعل السعودية وجهة سياحية مفضلة للشعب الصيني
-            </p>
+            <h2 className="text-2xl font-bold mb-2">{t("vision.title")}</h2>
+            <p className="text-lg">{t("vision.description")}</p>
           </div>
         </div>
       </Container>
