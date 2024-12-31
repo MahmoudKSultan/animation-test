@@ -38,7 +38,7 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang="en">
+    <html lang="ar">
       <body
         className={`ltr:${geistSans.variable} ltr:${geistMono.variable} ${cairo.className} antialiased `}
       >

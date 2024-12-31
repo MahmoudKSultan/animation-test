@@ -2,7 +2,7 @@
 import { notFound } from "next/navigation";
 import { getRequestConfig } from "next-intl/server";
 
-const locales: string[] = ["en", "ar", "zh"];
+const locales: string[] = ["ar", "en", "zh"];
 
 export default getRequestConfig(async ({ locale }) => {
   // eslint-disable-next-line
