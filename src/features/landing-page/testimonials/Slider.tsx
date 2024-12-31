@@ -22,7 +22,7 @@ export function Slider() {
   const dir = usePathname().includes("ar") ? "rtl" : "ltr";
 
   return (
-    <div className="my-16">
+    <div className="-mt-20 mb-16">
       <Container>
         <div
           className="w-full max-w-screen-lg mx-auto overflow-visible mt-80"

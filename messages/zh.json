@@ -20,6 +20,15 @@
         "message_placeholder": "在这里输入您的消息...",
         "button": "发送"
     },
+    "fields": {
+        "title": "我们的关注领域",
+        "cols": [
+            "电子商务",
+            "文化",
+            "旅游",
+            "媒体"
+        ]
+    },
     "testPage": {
         "clients": {
             "title": "Onward Ticket™ 与 100多家航空公司合作",

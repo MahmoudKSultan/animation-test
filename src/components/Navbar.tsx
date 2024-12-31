@@ -45,14 +45,15 @@ function Navbar() {
       <Container>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Link href="/">
+            <Link href="/" className="flex items-center -ml-10">
               <Image
                 src="/assets/images/logos/main-logo.png"
                 alt="saudina logo"
                 width={150}
                 height={70}
-                className="-ml-9"
+                className=""
               />
+              {/* <span className="-ml-5 text-2xl font-semibold text-primary">Saudiana</span> */}
             </Link>
             <div className="hidden md:flex gap-3">
               {links.map((link) => (

@@ -6,7 +6,6 @@ function Video({ item }: { item: string }) {
   const [isLoaded, setIsLoaded] = React.useState(false);
   const [isPlaying, setIsPlaying] = React.useState(false);
   function handleVideoClick() {
-    console.log("clicked");
     if (!isLoaded) {
       setIsLoaded(true);
     }
@@ -15,16 +14,12 @@ function Video({ item }: { item: string }) {
   }
 
   useEffect(() => {
-    const video = videoRef.current;
-    video?.addEventListener("loadeddata", () => {
-      console.log("video loaded", item);
-    });
     if (isPlaying) videoRef.current?.play();
     else videoRef.current?.pause();
   }, [isPlaying]);
 
   return (
-    <div className="relative" onClick={handleVideoClick}>
+    <div className="relative cursor-pointer" onClick={handleVideoClick}>
       {/* overlay */}
       {!isPlaying && (
         <div className="absolute inset-0 bg-black/50 rounded-lg">

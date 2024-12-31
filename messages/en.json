@@ -20,6 +20,15 @@
         "message_placeholder": "Your message here...",
         "button": "Send"
     },
+    "fields": {
+        "title": "Our Focus Areas",
+        "cols": [
+            "E-commerce",
+            "Culture",
+            "Tourism",
+            "Media"
+        ]
+    },
     "testPage": {
         "clients": {
             "title": "Onward Ticket™ works with 100+ airlines",

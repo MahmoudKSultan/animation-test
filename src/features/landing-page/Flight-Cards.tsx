@@ -53,7 +53,7 @@ export const Cards = () => {
         <div className="flex flex-col flex-grow items-center w-full relative">
           {/* Plane Icon */}
           <motion.div
-            className="sticky w-12 h-12 md:w-[4.4rem] md:h-[4.4rem] z-20 self-end ltr:mr-6 ltr:md:mr-[53px] rtl:ml-6 rtl:md:ml-[53px] rotate-0 z-50"
+            className="sticky w-12 h-12 md:w-[4.4rem] md:h-[4.4rem] self-end ltr:mr-6 ltr:md:mr-[53px] rtl:ml-6 rtl:md:ml-[53px] rotate-0 z-40"
             style={{
               marginBottom: "-72px",
               top: topValue, // Adjust for your scroll logic
