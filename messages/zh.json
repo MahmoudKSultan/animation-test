@@ -1,4 +1,10 @@
 {
+    "navbar": {
+        "ourStory": "我们的故事",
+        "boardOfDirectors": "董事会",
+        "blog": "博客",
+        "contactUs": "联系我们"
+    },
     "hero": {
         "vision": {
             "title": "愿景",

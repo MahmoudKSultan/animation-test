@@ -46,7 +46,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
             <Navbar />
-            <div className="flex flex-col min-h-screen mt-[69px] md:mt-0 gap-20">
+            <div className="flex flex-col min-h-screen gap-20">
               <main className="flex-1">{children}</main>
               <Footer />
             </div>

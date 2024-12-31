@@ -1,7 +1,7 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Container from "./Container";
-import { LanguageChange } from "./LanguageChange";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui";
@@ -9,43 +9,30 @@ import { Menu, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { LanguageChange } from "./LanguageChange";
 
-const links = [
-  {
-    href: "/our-story",
-    text: "Our Story",
-  },
-  {
-    href: "/managers",
-    text: "Managers",
-  },
+// Import the links array
+export const links = [
+  { href: "/our-story", text: "ourStory" },
+  { href: "/board-of-directors", text: "boardOfDirectors" },
+  { href: "/blog", text: "blog" },
+  { href: "/contact-us", text: "contactUs" },
 ];
 
 function Navbar() {
-  // const isDark
+  const t = useTranslations("navbar"); // Access translations under the "navbar" key
   const { setTheme, theme } = useTheme();
-  const [isScrolling, setIsScrolling] = React.useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 10) {
-        setIsScrolling(true);
-      } else {
-        setIsScrolling(false);
-      }
-    });
-  }, []);
 
   return (
     <nav
-      className={cn(`py-2 fixed duration-300 top-0 left-0 w-full z-50`, {
-        "bg-background dark:border-b dark:border-gray-800 shadow-md":
-          isScrolling,
-      })}
+      className={cn(
+        `py-2 w-full z-50 dark:border-b dark:border-gray-800 shadow-md`
+      )}
     >
       <Container>
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Link href="/" className="flex items-center -ml-10">
+          <div className="flex items-center gap-5">
+            <Link href="/" className="flex items-center ltr:-ml-10 rtl:-mr-10 ">
               <Image
                 src="/assets/images/logos/main-logo.png"
                 alt="saudina logo"
@@ -53,25 +40,24 @@ function Navbar() {
                 height={70}
                 className=""
               />
-              {/* <span className="-ml-5 text-2xl font-semibold text-primary">Saudiana</span> */}
             </Link>
-            <div className="hidden md:flex gap-3">
+            <div className="hidden md:flex gap-3 font-bold">
               {links.map((link) => (
                 <Link
                   href={link.href}
                   key={link.href}
-                  className={cn("text-muted dark:text-white", {
-                    "text-muted-foreground": isScrolling,
-                  })}
+                  className={cn(
+                    "text-gray-400 hover:text-black dark:hover:text-white duration-200"
+                  )}
                 >
-                  {link.text}
+                  {t(link.text)} {/* Resolve translation using the key */}
                 </Link>
               ))}
             </div>
           </div>
 
           <div className="hidden md:flex items-center gap-2">
-            <SiteConfguration setTheme={setTheme} theme={theme as string} />
+            <SiteConfiguration setTheme={setTheme} theme={theme as string} />
           </div>
           <Sheet>
             <SheetTrigger className="block md:hidden">
@@ -86,12 +72,12 @@ function Navbar() {
                       key={link.href}
                       className={cn("text-black dark:text-white text-2xl")}
                     >
-                      {link.text}
+                      {t(link.text)}
                     </Link>
                   ))}
                 </ul>
                 <div className="flex items-center justify-center gap-2">
-                  <SiteConfguration
+                  <SiteConfiguration
                     setTheme={setTheme}
                     theme={theme as string}
                   />
@@ -104,8 +90,7 @@ function Navbar() {
     </nav>
   );
 }
-
-function SiteConfguration({
+function SiteConfiguration({
   setTheme,
   theme,
 }: {
@@ -114,22 +99,23 @@ function SiteConfguration({
 }) {
   return (
     <>
+      {/* Language Switcher */}
       <LanguageChange />
-      {/* dark mode */}
+
+      {/* Dark Mode Toggle */}
       <Button
         size={"icon"}
         variant={"outline"}
         className="rounded-full hover:bg-muted bg-background dark:bg-background"
-        onClick={() => setTheme(theme == "light" ? "dark" : "light")}
+        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       >
-        {theme == "light" ? (
+        {theme === "light" ? (
           <Sun className="h-4 w-4" />
         ) : (
-          <Moon className="h-4 w-4" onClick={() => setTheme("dark")} />
+          <Moon className="h-4 w-4" />
         )}
       </Button>
     </>
   );
 }
-
 export default Navbar;

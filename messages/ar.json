@@ -1,4 +1,10 @@
 {
+    "navbar": {
+        "ourStory": "قصتنا",
+        "boardOfDirectors": "مجلس الادارة",
+        "blog": "المدونة",
+        "contactUs": "تواصل معنا"
+    },
     "hero": {
         "vision": {
             "title": "الرؤية",

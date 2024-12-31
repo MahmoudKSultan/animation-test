@@ -1,4 +1,10 @@
 {
+    "navbar": {
+        "ourStory": "Our Story",
+        "boardOfDirectors": "Board of Directors",
+        "blog": "Blog",
+        "contactUs": "Contact Us"
+    },
     "hero": {
         "vision": {
             "title": "Vision",
