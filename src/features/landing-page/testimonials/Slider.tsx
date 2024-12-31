@@ -15,6 +15,7 @@ import { ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import Container from "@/components/Container";
+import Video from "./Video";
 
 export function Slider() {
   const t = useTranslations("testimonials");
@@ -46,7 +47,7 @@ export function Slider() {
             modules={[Pagination, Navigation]}
             className="mySwiper text-blue-dark"
           >
-            {[1, 2, 3, 4].map((item) => (
+            {["1", "2", "3", "4"].map((item) => (
               <SwiperSlide className="!bg-transparent" key={`slide-${item}`}>
                 {/* left */}
                 <div
@@ -56,38 +57,7 @@ export function Slider() {
                 >
                   <div className="h-[25rem] w-[18rem] rounded-xl">
                     <div className="rounded-xl relative w-full">
-                      {/* <div
-                        className="rounded-xl overflow-hidden flex items-center justify-center"
-                        style={{
-                          background:
-                            "url(/assets/images/image01.jpg) center center / cover no-repeat",
-                          width: "18rem",
-                          height: "32rem",
-                        }}
-                      >
-                        <div
-                          className="absolute w-full h-full flex justify-center items-center z-40 rounded-xl"
-                          style={{
-                            background:
-                              "linear-gradient(180deg, rgba(30, 30, 30, 0.00) 57%, #1E1E1E 100%), transparent 50% / cover no-repeat",
-                          }}
-                        >
-                          <div className="h-full absolute top-[67%] text-white font-semibold px-3 z-10 text-left w-full">
-                            <div className="flex space-x-3 items-center pt-2">
-                              <div className="rounded-full px-2 py-0.5 bg-pink-500 bg-opacity-50">
-                                ako_858
-                              </div>
-                              <div>@abdom</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div> */}
-                      <video controls className="h-[25rem] w-[18rem] object-cover rounded-lg">
-                        <source
-                          src={`/assets/vids/testimonials/${item}.mp4`}
-                          type="video/mp4"
-                        ></source>
-                      </video>
+                      <Video item={item} />
                     </div>
                   </div>
                 </div>

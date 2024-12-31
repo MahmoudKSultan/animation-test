@@ -16,7 +16,7 @@ const links = [
     text: "Our Story",
   },
   {
-    href: "/our-story",
+    href: "/managers",
     text: "Managers",
   },
 ];

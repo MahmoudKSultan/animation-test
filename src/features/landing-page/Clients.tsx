@@ -39,7 +39,6 @@ export function Clients() {
               direction={n % 2 === 0 ? "right" : "left"}
             >
               {[...logos.slice(n * 10, (n + 1) * 10)].map((logo, idx) => {
-                console.log(logo);
                 return (
                   <Image
                     src={`/assets/images/partners/${idx + 1}.jpg`}
