@@ -21,7 +21,6 @@
     },
     "contact-form": {
         "title": "今天联系我们",
-        "subtitle": "告诉我们您的项目，我们将尽快回复您",
         "name_placeholder": "姓名",
         "email_placeholder": "example@mail.com",
         "message_placeholder": "在这里输入您的消息...",

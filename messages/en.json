@@ -21,7 +21,6 @@
     },
     "contact-form": {
         "title": "Contact us today",
-        "subtitle": "Tell us about your project and we will get back to you",
         "name_placeholder": "John Doe",
         "email_placeholder": "example@mail.com",
         "message_placeholder": "Your message here...",

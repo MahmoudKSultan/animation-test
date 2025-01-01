@@ -57,35 +57,29 @@ function Navbar() {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center gap-2">
+          <div className="flex items-center gap-2 ">
             <SiteConfiguration setTheme={setTheme} theme={theme as string} />
-          </div>
-          <Sheet>
-            <SheetTrigger className="block md:hidden">
-              <Menu className="h-6 w-6" />
-            </SheetTrigger>
-            <SheetContent className="border-secondary">
-              <div className="flex flex-col h-full">
-                <ul className="flex flex-col items-center flex-1 gap-3 mt-5">
-                  {links.map((link) => (
-                    <Link
-                      href={link.href}
-                      key={link.href}
-                      className={cn("text-black dark:text-white text-2xl")}
-                    >
-                      {t(link.text)}
-                    </Link>
-                  ))}
-                </ul>
-                <div className="flex items-center justify-center gap-2">
-                  <SiteConfiguration
-                    setTheme={setTheme}
-                    theme={theme as string}
-                  />
+            <Sheet>
+              <SheetTrigger className="block md:hidden w-10 h-10">
+                <Menu className="h-7 w-7 mx-auto" />
+              </SheetTrigger>
+              <SheetContent className="border-secondary">
+                <div className="flex flex-col h-full">
+                  <ul className="flex flex-col items-center flex-1 gap-3 mt-5">
+                    {links.map((link) => (
+                      <Link
+                        href={link.href}
+                        key={link.href}
+                        className={cn("text-black dark:text-white text-2xl")}
+                      >
+                        {t(link.text)}
+                      </Link>
+                    ))}
+                  </ul>
                 </div>
-              </div>
-            </SheetContent>
-          </Sheet>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </Container>
     </nav>

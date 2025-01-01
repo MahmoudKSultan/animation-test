@@ -1,4 +1,4 @@
-export * from "./Hero";
+export * from "./Hero/Hero";
 export * from "./Clients";
 export * from "./Contact";
 export * from "./OurFocus";

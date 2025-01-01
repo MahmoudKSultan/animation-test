@@ -13,7 +13,8 @@ export function Contact() {
         {/* <h2 className="text-4xl font-bold mb-10">Contact us</h2> */}
         <div className="flex flex-col md:flex-row items-center rounded-lg border dark:border-muted">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15282225.79979123!2d73.7250245393691!3d20.750301298393563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1587818542745!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27128457.40466338!2d82.7452811902308!3d33.90048786299449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31508e64e5c642c1%3A0x951daa7c349f366f!2sChina!5e0!3m2!1sen!2seg!4v1735741602651!5m2!1sen!2seg
+"
             // width="600"
             frameBorder="0"
             style={{ border: 0 }}
@@ -23,10 +24,7 @@ export function Contact() {
             className="w-full h-52 rounded-lg sm:h-80 md:w-1/2 md:h-[500px] rounded-s-lg md:rounded-e-none"
           />
           <form className="md:w-1/2 p-8">
-            <h2 className="text-4xl font-bold">{t("title")}</h2>
-            <p className="text-lg  mb-10 text-muted-foreground font-semibold">
-              {t("subtitle")}
-            </p>
+            <h2 className="text-4xl font-bold mb-10">{t("title")}</h2>
             <div className="mb-5">
               <label htmlFor="name" className="sr-only">
                 Name

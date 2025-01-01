@@ -21,7 +21,6 @@
     },
     "contact-form": {
         "title": "اتصل بنا اليوم",
-        "subtitle": "أخبرنا عن مشروعك وسنعود إليك",
         "name_placeholder": "اسمك",
         "email_placeholder": "example@mail.com",
         "message_placeholder": "رسالتك هنا...",
