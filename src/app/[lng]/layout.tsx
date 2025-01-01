@@ -26,8 +26,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Onward Ticket",
-  description: "Onward Ticket, Your Gateway to Adventure",
+  title: "Saudiana",
+  description: "Saudiana",
 };
 
 export default async function RootLayout({

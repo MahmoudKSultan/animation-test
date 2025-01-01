@@ -15,7 +15,7 @@ export const Cards = () => {
 
   const topValue = useTransform(scrollYProgress, [0, 1], ["0vh", "70vh"]);
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1.5]);
-  const t = useTranslations();
+  const t = useTranslations("inspirations");
   useEffect(() => {
     let previousScrollPosition = 0;
 
@@ -47,13 +47,11 @@ export const Cards = () => {
   return (
     <div className="container mx-auto  px-5">
       <div className="w-full max-w-screen-lg  pb-36 pt-16 mx-auto">
-        <div className="pb-14 text-4xl font-bold max-w-2xl">
-          {t("testPage.reasons.title")}
-        </div>
+        <div className="pb-14 text-4xl font-bold max-w-2xl">{t("title")}</div>
         <div className="flex flex-col flex-grow items-center w-full relative">
           {/* Plane Icon */}
           <motion.div
-            className="sticky w-12 h-12 md:w-[4.4rem] md:h-[4.4rem] self-end ltr:mr-6 ltr:md:mr-[53px] rtl:ml-6 rtl:md:ml-[53px] rotate-0 z-40"
+            className="sticky w-12 h-12 md:w-[4.4rem] md:h-[4.4rem] self-end ltr:mr-6 ltr:md:mr-[53px] rtl:ml-6 rtl:md:ml-[53px] rotate-0 z-50"
             style={{
               marginBottom: "-72px",
               top: topValue, // Adjust for your scroll logic
@@ -92,19 +90,19 @@ export const Cards = () => {
               <div className="flex items-center h-full">
                 <div className="w-4/5">
                   {/* <div className="text-lg font-bold">
-                    {t("testPage.reasons.cardTitles.0")}
+                    {t("cardTitles.0")}
                   </div> */}
                   <div className="text-3xl sm:text-5xl font-bold pt-5 text-balance  text-primary">
-                    {t("testPage.reasons.cardSubtitles.0")}
+                    {t("cardSubtitles.0")}
                   </div>
                   {/* <div className="text-lg md:text-xl pt-8">
                     <ul className="list-disc">
                       {[
-                        t("testPage.reasons.cardDescriptions.0.0"),
-                        t("testPage.reasons.cardDescriptions.0.1"),
-                        t("testPage.reasons.cardDescriptions.0.2"),
-                        t("testPage.reasons.cardDescriptions.0.3"),
-                        t("testPage.reasons.cardDescriptions.0.4"),
+                        t("cardDescriptions.0.0"),
+                        t("cardDescriptions.0.1"),
+                        t("cardDescriptions.0.2"),
+                        t("cardDescriptions.0.3"),
+                        t("cardDescriptions.0.4"),
                       ].map((item, index) => (
                         <li key={index}>{item}</li>
                       ))}
@@ -130,14 +128,7 @@ export const Cards = () => {
             {
               gradient:
                 "linear-gradient(99deg, #75E1D5 0%, rgba(255, 255, 255, 1) 99.96%)",
-              //   title: "Small Business",
               subtitle: "2-بناء مشاريع تقنية مبتكرة",
-              //   description: [
-              //     "Basic package elements",
-              //     "Produce 5 UGC advertising videos",
-              //     "Ad with 5 active accounts with a trusted license and over 10k followers",
-              //     "Campaign end report with recommendations for future campaigns",
-              //   ],
               offset: "64px",
             },
             {
@@ -145,15 +136,13 @@ export const Cards = () => {
                 "linear-gradient(104deg, #D3FFAE -0.05%, rgba(255, 255, 255, 1) 100.02%)",
               title: "Medium Enterprises",
               subtitle: "Specialized Package",
-              description: [
-                "Design advertising campaigns with the internal marketing team aiming for a +20% sales increase",
-                "Work on improving ad spend efficiency",
-                "Work on increasing conversion rates",
-                "Manage campaigns with micro-influencers",
-                "Creative ideas for campaign launches or new product launches",
-                "Build marketing departments for medium-sized enterprises",
-              ],
               offset: "96px",
+            },
+            {
+              gradient:
+                "linear-gradient(99deg, #75E1D5 0%, rgba(255, 255, 255, 1) 99.96%)",
+              subtitle: "2-بناء مشاريع تقنية مبتكرة",
+              offset: "128px",
             },
           ].map((card, index) => (
             <div
@@ -175,17 +164,17 @@ export const Cards = () => {
                 <div className="flex items-center h-full">
                   <div className="w-4/5">
                     {/* <div className="text-lg font-bold">
-                      {t(`testPage.reasons.cardTitles.${index + 1}`)}
+                      {t(`cardTitles.${index + 1}`)}
                     </div> */}
                     <div className="text-3xl sm:text-5xl font-bold pt-5 text-balance text-primary">
-                      {t(`testPage.reasons.cardSubtitles.${index + 1}`)}
+                      {t(`cardSubtitles.${index + 1}`)}
                     </div>
                     {/* <div className="text-lg pt-8">
                       <ul className="list-disc">
                         {card.description.map((item, idx) => (
                           <li key={idx} className="mb-2">
                             {t(
-                              `testPage.reasons.cardDescriptions.${
+                              `cardDescriptions.${
                                 index + 1
                               }.${idx}`
                             )}

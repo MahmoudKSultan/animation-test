@@ -33,7 +33,7 @@ export const VideoControls = forwardRef<HTMLVideoElement, VideoControlsProps>(
     };
 
     return (
-      <div className="flex items-center gap-4 absolute bottom-[45%] sm:bottom-[40%] md:bottom-8 right-8 text-white">
+      <div className="flex items-center gap-4 absolute bottom-[40%] md:bottom-8 right-8 text-white">
         {/* Play/Pause Button */}
         <div
           className="cursor-pointer"

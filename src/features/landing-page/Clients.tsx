@@ -33,7 +33,8 @@ export function Clients() {
   return (
     <div className="relative py-16">
       <Container>
-        <h2 className="text-4xl font-bold mb-10">{t("title")}</h2>
+        <h2 className="text-4xl font-bold mb-3">{t("title")}</h2>
+        <p className="text-xl mb-10 font-bold text-muted-foreground/90">{t("subtitle")}</p>
       </Container>
       <div className="hidden md:block relative px-5 masked" dir="ltr">
         <Marquee autoFill={true} speed={100} pauseOnHover>
@@ -56,7 +57,7 @@ export function Clients() {
           return (
             <Marquee
               autoFill={true}
-              speed={100}
+              speed={20}
               pauseOnHover
               className="mb-10"
               key={`${n}_${idx}`}

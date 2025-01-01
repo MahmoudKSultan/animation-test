@@ -8,19 +8,19 @@ import VideoControls from "./VideoControls";
 export function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
   return (
-    <div className="relative mb-0 md:mb-48 border-black border-8">
+    <div className="relative mb-0 md:mb-48">
       <video
         autoPlay
         loop
         muted
-        className="w-full h-[400px] sm:h-[500px] lg:h-[700px] object-cover"
+        className="w-full h-[500px] lg:h-[700px] object-cover"
         ref={videoRef}
         // style={{ backgroundSize: "cover" }}
       >
         <source src="/assets/hero.mp4" type="video/mp4"></source>
       </video>
       {/* small overlay */}
-      <div className="absolute  bottom-1/4 md:bottom-0 left-0 w-full h-1/2 to-black bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(0,0,0,0.7))] "></div>
+      <div className="absolute  bottom-1/3 md:bottom-0 left-0 w-full h-1/2 to-black bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(0,0,0,0.7))] "></div>
       <VideoControls videoRef={videoRef} />
       <VisionMission />
     </div>

@@ -17,7 +17,8 @@
         }
     },
     "clients": {
-        "title": "Clients"
+        "title": "Our partners",
+        "subtitle": "Our goal is clear, and we will work to achieve it in partnership with the best."
     },
     "contact-form": {
         "title": "Contact us today",
@@ -35,48 +36,42 @@
             "Media"
         ]
     },
-    "testPage": {
-        "clients": {
-            "title": "Onward Ticket™ works with 100+ airlines",
-            "book-btn": "BOOK NOW",
-            "see-sample": "ABOUT"
-        },
-        "reasons": {
-            "title": "Our Fields of Work",
-            "cardTitles": [
-                "Emerging Projects",
-                "Small Businesses",
-                "Medium Enterprises"
+    "inspirations": {
+        "title": "Our Fields of Work",
+        "cardTitles": [
+            "Emerging Projects",
+            "Small Businesses",
+            "Medium Enterprises"
+        ],
+        "cardSubtitles": [
+            "Influential marketing partnerships",
+            "Building innovative technology projects",
+            "Providing management consulting",
+            "Investment in emerging projects related to the project's vision"
+        ],
+        "cardDescriptions": [
+            [
+                "Design the appropriate advertising plan",
+                "Set up the advertising account and link the pixel",
+                "Write advertising campaign content",
+                "Create 4 creative designs",
+                "Campaign end report with recommendations"
             ],
-            "cardSubtitles": [
-                "Influential marketing partnerships",
-                "Building innovative technology projects",
-                "Providing management consulting"
+            [
+                "Basic package elements",
+                "Produce 5 UGC advertising videos",
+                "Ad with 5 active accounts with a trusted license and over 10k followers",
+                "Campaign end report with recommendations for future campaigns"
             ],
-            "cardDescriptions": [
-                [
-                    "Design the appropriate advertising plan",
-                    "Set up the advertising account and link the pixel",
-                    "Write advertising campaign content",
-                    "Create 4 creative designs",
-                    "Campaign end report with recommendations"
-                ],
-                [
-                    "Basic package elements",
-                    "Produce 5 UGC advertising videos",
-                    "Ad with 5 active accounts with a trusted license and over 10k followers",
-                    "Campaign end report with recommendations for future campaigns"
-                ],
-                [
-                    "Design advertising campaigns with the internal marketing team aiming for a +20% sales increase",
-                    "Work on improving ad spend efficiency",
-                    "Work on increasing conversion rates",
-                    "Manage campaigns with micro-influencers",
-                    "Creative ideas for campaign launches or new product launches",
-                    "Build marketing departments for medium-sized enterprises"
-                ]
+            [
+                "Design advertising campaigns with the internal marketing team aiming for a +20% sales increase",
+                "Work on improving ad spend efficiency",
+                "Work on increasing conversion rates",
+                "Manage campaigns with micro-influencers",
+                "Creative ideas for campaign launches or new product launches",
+                "Build marketing departments for medium-sized enterprises"
             ]
-        }
+        ]
     },
     "footer": {
         "infoText": "Onward Ticket™ upholds the highest standards in respecting international civil aviation directions and guidelines relating to booking practices, including but not limited to any misuse of booking classes, fraudulent, duplicate, speculative or fictitious bookings. Users repeatedly cancelling reservations without purpose will be monitored and may be limited or banned permanently from using our service.",
@@ -98,19 +93,6 @@
         "followUs": "Follow us"
     },
     "testimonials": {
-        "title": "Trusted by thousands of travelers since 2019",
-        "subtitle": "Onward Ticket™ helps thousands of travelers enjoy their adventures with less stress & more freedom.",
-        "slider": {
-            "slide1": {
-                "name": "Abdulrahman Al-Omran",
-                "title": "Marketing Inspiration",
-                "content": "Samir is one of my inspirations in the field of marketing, and he always amazes me with his way of thinking and his incredible ability to solve problems and explore. This thread is valuable for anyone passionate about marketing."
-            },
-            "slide2": {
-                "name": "Hamad bin Fahad",
-                "title": "Traveler",
-                "content": "Samir is one of my inspirations in the field of marketing, and he always amazes me with his way of thinking and his incredible ability to solve problems and explore. This thread is valuable for anyone passionate about marketing."
-            }
-        }
+        "title": "Visual Nutrition"
     }
 }

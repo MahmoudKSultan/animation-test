@@ -29,14 +29,14 @@ export function Slider() {
           dir={dir}
         >
           {/* Title */}
-          <div className="flex items-center text-4xl sm:text-[40px] font-extrabold space-x-4 max-sm:text-center">
+          <div className="flex items-center text-4xl sm:text-[40px] font-extrabold space-x-4 max-sm:text-center mb-10">
             <span>{t("title")}</span>
           </div>
 
           {/* Subtitle */}
-          <div className="text-2xl pb-6 pt-4 max-sm:text-center text-balance">
+          {/* <div className="text-2xl pb-6 pt-4 max-sm:text-center text-balance">
             <span>{t("subtitle")}</span>
-          </div>
+          </div> */}
           <Swiper
             slidesPerView={"auto"}
             spaceBetween={10}
