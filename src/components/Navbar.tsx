@@ -10,6 +10,7 @@ import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { LanguageChange } from "./LanguageChange";
+import { useParams } from "next/navigation";
 
 // Import the links array
 export const links = [
@@ -23,6 +24,7 @@ export const links = [
 function Navbar() {
   const t = useTranslations("navbar"); // Access translations under the "navbar" key
   const { setTheme, theme } = useTheme();
+  const { lng } = useParams<{ lng: string }>();
 
   return (
     <nav
@@ -33,7 +35,11 @@ function Navbar() {
       <Container>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-5">
-            <Link href="/" className="flex items-center ltr:-ml-10 rtl:-mr-10 ">
+            <Link
+              href={`/${lng}`}
+              className="flex items-center ltr:-ml-10 rtl:-mr-10 "
+              locale={lng}
+            >
               <Image
                 src="/assets/images/logos/main-logo.png"
                 alt="saudina logo"
@@ -45,11 +51,12 @@ function Navbar() {
             <div className="hidden md:flex gap-3 font-bold">
               {links.map((link) => (
                 <Link
-                  href={link.href}
+                  href={`/${lng}${link.href}`}
                   key={link.href}
                   className={cn(
                     "text-gray-400 hover:text-black dark:hover:text-white duration-200"
                   )}
+                  locale={lng}
                 >
                   {t(link.text)} {/* Resolve translation using the key */}
                 </Link>
@@ -68,9 +75,10 @@ function Navbar() {
                   <ul className="flex flex-col items-center flex-1 gap-3 mt-5">
                     {links.map((link) => (
                       <Link
-                        href={link.href}
+                        href={`/${lng}${link.href}`}
                         key={link.href}
                         className={cn("text-black dark:text-white text-2xl")}
+                        locale={lng}
                       >
                         {t(link.text)}
                       </Link>
