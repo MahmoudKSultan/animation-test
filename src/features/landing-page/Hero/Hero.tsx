@@ -34,7 +34,7 @@ const VisionMission = () => {
   const t = useTranslations("hero");
   return (
     // relative md:absolute md:-bottom-40 left-1/2 -translate-x-1/2
-    <div className="bg-primary w-full  h-[150px] lg:h-[200px]   md:py-8 mx-auto px-8 text-white  ">
+    <div className="bg-primary w-full pt-8 h-[200px]   md:py-12 mx-auto  text-white  ">
       <Container>
         <div className="flex justify-start items-start">
           {/* Mission Section */}

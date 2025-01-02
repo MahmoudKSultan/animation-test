@@ -20,7 +20,7 @@ const Footer = () => {
                 />
               </Link>
               <div className="mt-4 lg:block hidden">
-                onwardticket.com © 2024
+              saudi8china.com  © 2025
               </div>
             </div>
           </div>
@@ -32,7 +32,7 @@ const Footer = () => {
               <div className="flex gap-5 pt-4 items-center">
                 <Link
                   target="_blank"
-                  href="https://www.tiktok.com/@onwardticket"
+                  href="https://www.tiktok.com/"
                 >
                   <Image
                     alt="Tiktok image"
@@ -43,19 +43,19 @@ const Footer = () => {
                 </Link>
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/onwardticket/"
+                  href="https://www.instagram.com/"
                   className="rounded-full flex justify-center items-center"
                 >
                   <Image
                     alt="Instgram image"
                     width="30"
                     height="30"
-                    src="/assets/images/logos/instagram.webp"
+                    src="/assets/images/logos/x.png"
                   />
                 </Link>
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/onwardticket/"
+                  href="https://www.instagram.com/"
                   className="rounded-full flex justify-center items-center"
                 >
                   {" "}
@@ -82,7 +82,7 @@ const Footer = () => {
 
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/onwardticket/"
+                  href="https://www.instagram.com/"
                   className="rounded-full flex justify-center items-center"
                 >
                   {" "}
@@ -96,7 +96,7 @@ const Footer = () => {
               </div>
 
               <div className="mt-4 border-t border-gray-500 pt-5 lg:hidden text-center">
-                onwardticket.com © 2024
+              saudi8china.com © 2024
               </div>
             </div>
 

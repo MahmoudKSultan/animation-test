@@ -29,7 +29,7 @@ function Navbar() {
   return (
     <nav
       className={cn(
-        `py-2 w-full z-50 dark:border-b dark:border-gray-800 shadow-md fixed  bg-white`
+        `py-2 w-full z-50 dark:border-b dark:border-gray-800 shadow-md   `
       )}
     >
       <Container>

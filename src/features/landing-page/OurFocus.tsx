@@ -36,7 +36,7 @@ function OurFocus() {
               className="group px-5 relative  mt-12 mx-auto w-2/3 sm:w-1/2 md:w-1/3 lg:w-1/4 mb-10"
               key={image.title}
             >
-                   <p className="absolute w-[200px] p-1 text-center mr-2 -top-[14px] z-50 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white bg-[#1E8022] font-bold md:text-xl lg:text-lg  ">
+                   <p className="absolute w-[200px] p-1 text-center mr-2 -top-[14px] z-10 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white bg-[#1E8022] font-bold md:text-xl lg:text-lg  ">
                   {t(`cols.${idx}`)}
                 </p>
       <div className=" clip-path-cut-corner  ">

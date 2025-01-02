@@ -67,8 +67,8 @@ export function Clients() {
                 return (
                   <Image
                     src={`/assets/images/partners/${idx + 1}.jpg`}
-                    width={30}
-                    height={30}
+                    width={35}
+                    height={35}
                     alt={`${logo}`}
                     key={logo}
                     className="ml-10"
