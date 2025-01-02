@@ -41,11 +41,11 @@ export function Clients() {
           {logos.map((logo, idx) => (
             <Image
               src={`/assets/images/partners/${idx + 1}.jpg`}
-              width={100}
+              width={120}
               height={100}
               alt={`${logo}`}
               key={logo}
-              className="ml-10 border-2 border-[#1E8022]  p-4 w-[120px] h-[120px] rounded-full"
+              className="ml-10 "
             />
           ))}
         </Marquee>
