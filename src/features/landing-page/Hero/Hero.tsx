@@ -9,7 +9,7 @@ export function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
   return (
   <>
-    <div className="relative mb-0">
+    <div className="relative  mb-0">
       <video
         autoPlay
         loop
@@ -34,12 +34,12 @@ const VisionMission = () => {
   const t = useTranslations("hero");
   return (
     // relative md:absolute md:-bottom-40 left-1/2 -translate-x-1/2
-    <div className="bg-primary lg:w-full md:w-fit h-[150px] lg:h-[200px] text-center flex justify-center items-center py-24 lg:py-24 md:py-8 mx-auto px-8 text-white  ">
+    <div className="bg-primary w-full  h-[150px] lg:h-[200px]   md:py-8 mx-auto px-8 text-white  ">
       <Container>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-start items-start">
           {/* Mission Section */}
-          <div className="text-center font-semibold">
-            <div className="flex justify-center">
+          <div className="text-start font-semibold">
+            <div className="flex justify-start">
               {/* <Image
                 alt="compass image"
                 src={"/assets/images/compass.png"}
@@ -48,7 +48,7 @@ const VisionMission = () => {
                 className="w-28 h-28 md:w-20 md:h-20"
               /> */}
             </div>
-            <h2 className="text-4xl font-bold mb-8">{t("mission.title")}</h2>
+            <h2 className="text-4xl font-bold mb-8   inline-block pb-2   text-white border-b-4 border-[#1E8022]">{t("mission.title")}</h2>
             <blockquote className="text-xl">{t("mission.description")}</blockquote>
           </div>
 
