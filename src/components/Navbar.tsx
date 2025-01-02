@@ -41,10 +41,10 @@ function Navbar() {
               locale={lng}
             >
               <Image
-                src="/assets/images/logos/logo.png"
+                src="/assets/images/logos/main-logo.png"
                 alt="saudina logo"
-                width={55}
-                height={55}
+                width={150}
+                height={150}
                 className=""
               />
             </Link>

@@ -14,6 +14,7 @@ export function Hero() {
         autoPlay
         loop
         muted
+        playsInline 
         className="w-full  h-screen lg:h-[700px] object-cover"
         ref={videoRef}
         // style={{ backgroundSize: "cover" }}
@@ -49,7 +50,11 @@ const VisionMission = () => {
               /> */}
             </div>
             <h2 className="text-4xl font-bold mb-8   inline-block pb-2   text-white border-b-4 border-[#1E8022]">{t("mission.title")}</h2>
-            <blockquote className="text-xl">{t("mission.description")}</blockquote>
+            <blockquote
+  className="text-xl sm:max-w-24"
+  dangerouslySetInnerHTML={{ __html: t("mission.description") }}
+></blockquote>
+
           </div>
 
           {/* Vision Section */}

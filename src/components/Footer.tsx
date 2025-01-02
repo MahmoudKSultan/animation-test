@@ -95,9 +95,6 @@ const Footer = () => {
                 </Link>
               </div>
 
-              <div className="mt-4 border-t border-gray-500 pt-5 lg:hidden text-center">
-              saudi8china.com © 2024
-              </div>
             </div>
 
             {/* <div className="text-[0.8rem] font-light leading-tight pt-2">

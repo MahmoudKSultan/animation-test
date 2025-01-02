@@ -52,7 +52,7 @@ export function Clients() {
       </div>
 
       {/* mobile */}
-      <div className="md:hidden px-5 masked" dir="ltr">
+      {/* <div className="md:hidden px-5 masked" dir="ltr">
         {[0, 1, 2].map((n, idx) => {
           return (
             <Marquee
@@ -78,8 +78,32 @@ export function Clients() {
             </Marquee>
           );
         })}
-      </div>
-
+      </div> */}
+<div className="md:hidden px-5 masked" dir="ltr">
+  {[0, 1, 2].map((n) => {
+    return (
+      <Marquee
+        autoFill={true}
+        speed={30}
+        pauseOnHover
+        className="mb-10"
+        key={`marquee_${n}`}
+        direction={n % 2 === 0 ? "right" : "left"}
+      >
+        {logos.slice(n * 10, (n + 1) * 10).map((logo, idx) => (
+          <Image
+            src={`/assets/images/partners/${logo}`}
+            width={45}
+            height={45}
+            alt={`Logo ${logo}`}
+            key={`logo_${n}_${idx}`}
+            className="ml-10"
+          />
+        ))}
+      </Marquee>
+    );
+  })}
+</div>
       {/* Clouds */}
       {/* <div className="max-sm:hidden">
         <motion.div
