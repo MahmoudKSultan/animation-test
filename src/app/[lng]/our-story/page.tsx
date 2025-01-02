@@ -1,6 +1,7 @@
 "use client";
 import Container from "@/components/Container";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function StoryPage() {
   const t = useTranslations();
@@ -10,6 +11,13 @@ export default function StoryPage() {
   return (
     <div className="py-10 text-gray-600 dark:text-gray-100 font-semibold">
       <Container>
+        <Image
+          width={300}
+          height={500}
+          className="w-[90%] md:w-2/5 mx-auto lg:mx-0 lg:1/5 mb-10"
+          src="/assets/images/our-story.jpg"
+          alt="Two men next to each other"
+        />
         <div className="space-y-5">
           {paragraphs.map((paragraph: string, index: number) => (
             <p key={index}>{paragraph}</p>
