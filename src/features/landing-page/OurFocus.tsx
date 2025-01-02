@@ -29,7 +29,6 @@ function OurFocus() {
     <div className="relative py-16">
       <Container>
         <h2 className="text-4xl inline-block pb-2 font-bold mb-10 text-primary border-b-4 border-[#1E8022]">{t("title")}</h2>
-        {/* <p className="text-xl mb-10 font-medium text-muted-foreground/90">{t("subtitle")}</p> */}
         <div className="flex flex-wrap -mx-5">
           {images.map((image, idx) => (
             <div

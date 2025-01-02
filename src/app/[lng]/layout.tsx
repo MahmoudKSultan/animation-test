@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Geist, Geist_Mono, Cairo } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
@@ -25,10 +25,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Saudiana",
-  description: "Saudiana",
-};
+// export const metadata: Metadata = {
+//   title: "Saudina",
+//   description: "Saudina",
+// };
 
 export default async function RootLayout({
   children,

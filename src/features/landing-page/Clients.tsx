@@ -66,7 +66,7 @@ export function Clients() {
               {[...logos.slice(n * 10, (n + 1) * 10)].map((logo, idx) => {
                 return (
                   <Image
-                    src={`/assets/images/partners/${idx + 1}.jpg`}
+                    src={`/assets/images/partners/${(idx + n * 10) + 1}.jpg`}
                     width={35}
                     height={35}
                     alt={`${logo}`}
