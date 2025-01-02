@@ -16,12 +16,10 @@ const Footer = () => {
                 <img
                   src="/assets/images/logos/main-logo.png"
                   className="w-full md:w-56 lg:border-b border-gray-500 pb-5"
-                  alt="Saudiana logo"
+                  alt="Saudina logo"
                 />
               </Link>
-              <div className="mt-4 lg:block hidden">
-              saudi8china.com  © 2025
-              </div>
+              <div className="mt-4 lg:block hidden">saudi8china.com © 2025</div>
             </div>
           </div>
 
@@ -30,10 +28,7 @@ const Footer = () => {
             <div className="w-full pt-4 ">
               <div className="font-bold text-lg">{t("footer.followUs")}</div>
               <div className="flex gap-5 pt-4 items-center">
-                <Link
-                  target="_blank"
-                  href="https://www.tiktok.com/"
-                >
+                <Link target="_blank" href="https://www.tiktok.com/">
                   <Image
                     alt="Tiktok image"
                     width="30"
@@ -47,10 +42,10 @@ const Footer = () => {
                   className="rounded-full flex justify-center items-center"
                 >
                   <Image
-                    alt="Instgram image"
+                    alt="Twitter image"
                     width="30"
                     height="30"
-                    src="/assets/images/logos/x.png"
+                    src="/assets/images/logos/twitter.png"
                   />
                 </Link>
                 <Link
@@ -96,7 +91,7 @@ const Footer = () => {
               </div>
 
               <div className="mt-4 border-t border-gray-500 pt-5 lg:hidden text-center">
-              saudi8china.com © 2024
+                saudi8china.com © 2024
               </div>
             </div>
 
