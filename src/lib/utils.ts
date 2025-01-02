@@ -9,9 +9,9 @@ export function cn(...inputs: ClassValue[]) {
 export async function generateMetadata({
   params,
 }: {
-  params: { lng: string };
+  params: Promise<{ lng: string }>;
 }) {
-  const { lng } = params;
+  const { lng } = await params;
 
   // Load translations for the specific locale
   const messages = (await import(`../../messages/${lng}.json`)).default;
