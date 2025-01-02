@@ -9,6 +9,7 @@ import { LanguageProvider } from "@/components/LanguageChange";
 import { ThemeProvider } from "@/providers";
 import Navbar from "@/components/Navbar";
 import ScrollTop from "@/components/ScrollTop";
+import SplashScreen from "@/components/SplashScreen";
 
 const cairo = Cairo({
   variable: "--font-cairo",
@@ -45,6 +46,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
             <Navbar />
+            <SplashScreen />
             <div className="flex flex-col min-h-screen gap-20">
               <main className="flex-1">{children}</main>
               <Footer />

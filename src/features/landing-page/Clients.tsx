@@ -33,7 +33,7 @@ export function Clients() {
   return (
     <div className="relative py-16">
       <Container>
-        <h2 className=" text-4xl inline-block pb-2 font-bold  text-primary border-b-4 border-[#1E8022] mb-10 ">{t("title")}</h2>
+        <h2 className=" text-4xl inline-block pb-2 font-bold  text-primary dark:text-white border-b-4 border-[#1E8022] mb-10 ">{t("title")}</h2>
         <p className="text-xl mb-10 font-medium text-muted-foreground/90">{t("subtitle")}</p>
       </Container>
       <div className="hidden md:block relative px-5 masked " dir="ltr">

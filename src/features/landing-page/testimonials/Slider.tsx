@@ -30,7 +30,7 @@ export function Slider() {
         >
           {/* Title */}
           <div className=" ">
-            <div className="mb-10 text-4xl inline-block pb-2 font-bold  text-primary border-b-4 border-[#1E8022]">
+            <div className="mb-10 text-4xl inline-block pb-2 font-bold  text-primary dark:text-white border-b-4 border-[#1E8022]">
               {t("title")}
             </div>
             {/* <p className="text-xl mb-10 font-medium text-muted-foreground/90">

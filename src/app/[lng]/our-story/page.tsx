@@ -9,7 +9,7 @@ export default function StoryPage() {
   console.log(paragraphs);
 
   return (
-    <div className="py-10 text-gray-600 dark:text-gray-100 font-semibold">
+    <div className="py-10 text-gray-600 dark:text-gray-100 font-semibold lg:pr-20">
       <Container>
         <Image
           width={300}
