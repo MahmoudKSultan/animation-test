@@ -24,7 +24,7 @@ export function Contact() {
             className="w-full h-52 rounded-lg sm:h-80 md:w-1/2 md:h-[500px] rounded-s-lg md:rounded-e-none"
           />
           <form className="w-full md:w-1/2 p-8">
-            <h2 className="text-4xl font-bold mb-10">{t("title")}</h2>
+            <h2 className="text-4xl font-bold mb-10 text-primary">{t("title")}</h2>
             <div className="mb-5">
               <label htmlFor="name" className="sr-only">
                 Name

@@ -33,19 +33,19 @@ export function Clients() {
   return (
     <div className="relative py-16">
       <Container>
-        <h2 className="text-4xl font-bold mb-3">{t("title")}</h2>
-        <p className="text-xl mb-10 font-bold text-muted-foreground/90">{t("subtitle")}</p>
+        <h2 className=" text-4xl inline-block pb-2 font-bold  text-primary border-b-4 border-[#1E8022] mb-10 ">{t("title")}</h2>
+        <p className="text-xl mb-10 font-medium text-muted-foreground/90">{t("subtitle")}</p>
       </Container>
-      <div className="hidden md:block relative px-5 masked" dir="ltr">
+      <div className="hidden md:block relative px-5 masked " dir="ltr">
         <Marquee autoFill={true} speed={100} pauseOnHover>
           {logos.map((logo, idx) => (
             <Image
               src={`/assets/images/partners/${idx + 1}.jpg`}
-              width={70}
-              height={70}
+              width={100}
+              height={100}
               alt={`${logo}`}
               key={logo}
-              className="ml-10"
+              className="ml-10 border-2 border-[#1E8022]  p-4 w-[120px] h-[120px] rounded-full"
             />
           ))}
         </Marquee>

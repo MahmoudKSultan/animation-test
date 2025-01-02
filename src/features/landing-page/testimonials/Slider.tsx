@@ -25,13 +25,13 @@ export function Slider() {
     <div className="-mt-20 mb-16">
       <Container>
         <div
-          className="w-full max-w-screen-lg mx-auto overflow-visible mt-80"
+          className="w-full max-w-7xl mx-auto overflow-visible mt-80"
           dir={dir}
         >
           {/* Title */}
-          <div className="flex items-center text-4xl sm:text-[40px] font-extrabold space-x-4 max-sm:text-center mb-10">
-            <span>{t("title")}</span>
-          </div>
+          <div className=" ">
+          <div className="mb-10 text-4xl inline-block pb-2 font-bold  text-primary border-b-4 border-[#1E8022]">{t("title")}</div>
+          <p className="text-xl mb-10 font-medium text-muted-foreground/90">{t("subtitle")}</p>          </div>
 
           {/* Subtitle */}
           {/* <div className="text-2xl pb-6 pt-4 max-sm:text-center text-balance">

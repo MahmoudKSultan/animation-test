@@ -1,51 +1,55 @@
 "use client";
 import Container from "@/components/Container";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+// import Image from "next/image";
 import React, { useRef } from "react";
 import VideoControls from "./VideoControls";
 
 export function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
   return (
-    <div className="relative mb-0 md:mb-48">
+  <>
+    <div className="relative mb-0">
       <video
         autoPlay
         loop
         muted
-        className="w-full h-[500px] lg:h-[700px] object-cover"
+        className="w-full  h-screen lg:h-[700px] object-cover"
         ref={videoRef}
         // style={{ backgroundSize: "cover" }}
       >
         <source src="/assets/hero.mp4" type="video/mp4"></source>
       </video>
       {/* small overlay */}
-      <div className="absolute  bottom-1/3 md:bottom-0 left-0 w-full h-1/2 to-black bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(0,0,0,0.7))] "></div>
+      <div className="absolute  -bottom-1 md:bottom-0 left-0 w-full h-screen to-black bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(0,0,0,0.7))] "></div>
       <VideoControls videoRef={videoRef} />
-      <VisionMission />
+   
     </div>
+       <VisionMission />
+  </>
   );
 }
 
 const VisionMission = () => {
   const t = useTranslations("hero");
   return (
-    <div className="bg-primary md:w-fit  py-12 md:py-8 mx-auto px-8 text-white relative md:absolute md:-bottom-40 left-1/2 -translate-x-1/2 md:rounded-lg">
+    // relative md:absolute md:-bottom-40 left-1/2 -translate-x-1/2
+    <div className="bg-primary lg:w-full md:w-fit h-[150px] lg:h-[200px] text-center flex justify-center items-center py-24 lg:py-64 md:py-8 mx-auto px-8 text-white  ">
       <Container>
         <div className="flex justify-center items-center">
           {/* Mission Section */}
           <div className="text-center font-semibold">
             <div className="flex justify-center">
-              <Image
+              {/* <Image
                 alt="compass image"
                 src={"/assets/images/compass.png"}
                 width={120}
                 height={120}
                 className="w-28 h-28 md:w-20 md:h-20"
-              />
+              /> */}
             </div>
-            <h2 className="text-2xl font-bold mb-2">{t("mission.title")}</h2>
-            <p className="text-lg">{t("mission.description")}</p>
+            <h2 className="text-4xl font-bold mb-8">{t("mission.title")}</h2>
+            <blockquote className="text-xl">{t("mission.description")}</blockquote>
           </div>
 
           {/* Vision Section */}

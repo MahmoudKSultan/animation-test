@@ -29,7 +29,7 @@ function Navbar() {
   return (
     <nav
       className={cn(
-        `py-2 w-full z-50 dark:border-b dark:border-gray-800 shadow-md`
+        `py-2 w-full z-50 dark:border-b dark:border-gray-800 shadow-md fixed  bg-white`
       )}
     >
       <Container>
@@ -37,24 +37,24 @@ function Navbar() {
           <div className="flex items-center gap-5">
             <Link
               href={`/${lng}`}
-              className="flex items-center ltr:-ml-10 rtl:-mr-10 "
+              className="flex items-center  "
               locale={lng}
             >
               <Image
-                src="/assets/images/logos/main-logo.png"
+                src="/assets/images/logos/logo.png"
                 alt="saudina logo"
-                width={150}
-                height={70}
+                width={55}
+                height={55}
                 className=""
               />
             </Link>
-            <div className="hidden md:flex gap-3 font-bold">
+            <div className="hidden md:flex gap-6 text-lg font-medium">
               {links.map((link) => (
                 <Link
                   href={`/${lng}${link.href}`}
                   key={link.href}
                   className={cn(
-                    "text-gray-400 hover:text-black dark:hover:text-white duration-200"
+                    "text-gray-500 hover:text-black dark:hover:text-white duration-200"
                   )}
                   locale={lng}
                 >

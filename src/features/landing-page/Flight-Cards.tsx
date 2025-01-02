@@ -46,9 +46,10 @@ export const Cards = () => {
 
   return (
     <div className="container mx-auto  px-5">
-      <div className="w-full max-w-screen-lg  pb-36 pt-16 mx-auto">
-        <div className="pb-14 text-4xl font-bold max-w-2xl">{t("title")}</div>
-        <div className="flex flex-col flex-grow items-center w-full relative">
+      <div className="w-full max-w-7xl  pb-36 pt-16 mx-auto">
+        <div className="mb-10 text-4xl inline-block pb-2 font-bold  text-primary border-b-4 border-[#1E8022]">{t("title")}</div>
+        <p className="text-xl mb-10 font-medium text-muted-foreground/90">{t("subtitle")}</p>
+        <div className="flex max-w-5xl flex-col lg:mr-48 flex-grow items-center w-full relative">
           {/* Plane Icon */}
           <motion.div
             className="sticky w-12 h-12 md:w-[4.4rem] md:h-[4.4rem] self-end ltr:mr-6 ltr:md:mr-[53px] rtl:ml-6 rtl:md:ml-[53px] rotate-0 z-50"

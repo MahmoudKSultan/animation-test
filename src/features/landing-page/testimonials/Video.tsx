@@ -19,12 +19,12 @@ function Video({ item }: { item: string }) {
   }, [isPlaying]);
 
   return (
-    <div className="relative cursor-pointer" onClick={handleVideoClick}>
+    <div className="relative cursor-pointer " onClick={handleVideoClick}>
       {/* overlay */}
       {!isPlaying && (
-        <div className="absolute inset-0 bg-black/50 rounded-lg">
+        <div className="absolute inset-0 bg-black/50 rounded-lg ">
           {/* play / pause button */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black/50 w-12 h-12 rounded-full flex items-center justify-center">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#952723]/50 w-12 h-12 rounded-full flex items-center justify-center">
             <Play className="h-5 w-5 text-white" />
           </div>
         </div>
