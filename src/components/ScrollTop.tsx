@@ -26,7 +26,7 @@ function ScrollTop() {
   return (
     <Button
       onClick={scrollToTop}
-      className={`fixed bottom-10 right-10 transition-opacity duration-300 z-40 ${
+      className={`fixed bottom-10 right-10 transition-opacity duration-300 z-40 text-white ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       size="icon"

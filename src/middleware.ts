@@ -16,6 +16,7 @@ export function middleware(request: NextRequest) {
 
   // Only match routes that are user-facing pages (not API or static files)
   if (
+    pathname.startsWith("/posts/") ||
     pathname.startsWith("/assets/") ||
     pathname.startsWith("/_next/") ||
     pathname.startsWith("/api/") ||

@@ -36,3 +36,7 @@ export async function generateMetadata({
     },
   };
 }
+
+export const formatText = (text: string): string => {
+  return text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+};

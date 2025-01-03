@@ -26,6 +26,7 @@
     },
     "contact-form": {
         "title": "Contact us today",
+        "address": "Company Address",
         "name_placeholder": "John Doe",
         "email_placeholder": "example@mail.com",
         "message_placeholder": "Your message here...",
