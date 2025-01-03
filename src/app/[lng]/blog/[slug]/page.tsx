@@ -87,7 +87,7 @@ const BlogPost = async ({ params }: BlogPostProps) => {
             case "heading":
               return React.createElement(
                 `h${section.level}`,
-                { key: index, className: "text-xl font-bold mt-10 mb-5" },
+                { key: index, className: "text-xl font-bold mt-20 mb-5" },
                 section.text
               );
             case "list":
