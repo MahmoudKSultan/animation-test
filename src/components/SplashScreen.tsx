@@ -1,8 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import Container from "./Container";
-
 export const SplashScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -16,7 +14,7 @@ export const SplashScreen = () => {
     setTimeout(() => {
       // just in case
       setIsLoading(false);
-    }, 3000);
+    }, 100);
 
     return () => {
       window.removeEventListener("load", handleLoad);
@@ -30,9 +28,8 @@ export const SplashScreen = () => {
       <div className="text-center">
         {/* <h1 className="text-4xl font-bold">Welcome to Saudina</h1>
         <p className="mt-2 text-lg">Loading...</p> */}
-        <Container>
-          {/* mobile */}
-          <div className="md:hidden flex flex-col items-center justify-center w-full sm:w-3/4 mx-auto">
+        {/* mobile */}
+        {/* <div className="md:hidden flex flex-col items-center justify-center w-full sm:w-3/4 mx-auto">
             <Image
               alt="the chinese president with the saudi prince"
               src="/assets/images/splash.jpg"
@@ -48,20 +45,21 @@ export const SplashScreen = () => {
                 في السعودية
               </div>
             </div>
-          </div>
-          {/* medium and large screens */}
-          <div className="w-96 h-96 relative hidden md:block">
-            <div className="w-full h-full border-4 border-primary border-b-0 border-l-0 animate-spinning rounded-full"></div>
+          </div> */}
+        {/* medium and large screens */}
+        <div className="w-96 h-96 relative overflow-hidden">
+          <div className="w-full h-full border-4 border-primary border-b-0 border-l-0 animate-spinning rounded-full"></div>
 
-            <Image
-              alt="saudina logo"
-              src={"/assets/images/logos/main-logo.png"}
-              width={300}
-              height={150}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full"
+          <Image
+            alt="saudina logo"
+            src={"/assets/images/logos/main-logo.png"}
+            width={350} // أو أبعاد أخرى مناسبة
+            height={350}
+            priority
+            sizes="(max-width: 768px) 100vw, 400px"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
             />
-          </div>
-        </Container>
+        </div>
       </div>
     </div>
   );

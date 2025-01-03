@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Container from "./Container";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -25,7 +25,10 @@ function Navbar() {
   const t = useTranslations("navbar"); // Access translations under the "navbar" key
   const { setTheme, theme } = useTheme();
   const { lng } = useParams<{ lng: string }>();
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const handleLinkClick = () => {
+    setIsMenuOpen(false); // Close the menu
+  };
   return (
     <nav
       className={cn(
@@ -64,30 +67,39 @@ function Navbar() {
             </div>
           </div>
 
-          <div className="flex items-center gap-2 ">
-            <SiteConfiguration setTheme={setTheme} theme={theme as string} />
-            <Sheet>
-              <SheetTrigger className="block md:hidden w-10 h-10">
-                <Menu className="h-7 w-7 mx-auto" />
-              </SheetTrigger>
-              <SheetContent className="border-secondary">
-                <div className="flex flex-col h-full">
-                  <ul className="flex flex-col items-center flex-1 gap-3 mt-5">
-                    {links.map((link) => (
-                      <Link
-                        href={`/${lng}${link.href}`}
-                        key={link.href}
-                        className={cn("text-black dark:text-white text-2xl")}
-                        locale={lng}
-                      >
-                        {t(link.text)}
-                      </Link>
-                    ))}
-                  </ul>
-                </div>
-              </SheetContent>
-            </Sheet>
-          </div>
+          <div className="flex items-center gap-2">
+      <SiteConfiguration setTheme={setTheme} theme={theme as string} />
+      <Sheet>
+        <SheetTrigger
+          onClick={() => setIsMenuOpen(true)}
+          className="block md:hidden w-10 h-10"
+        >
+          <Menu className="h-7 w-7 mx-auto" />
+        </SheetTrigger>
+        {isMenuOpen && (
+          <SheetContent
+            className="border-secondary"
+            onDismiss={() => setIsMenuOpen(false)} // Optional: if Sheet supports this
+          >
+            <div className="flex flex-col h-full">
+              <ul className="flex flex-col items-center flex-1 gap-3 mt-5">
+                {links.map((link) => (
+                  <Link
+                    href={`/${lng}${link.href}`}
+                    key={link.href}
+                    className={cn("text-black dark:text-white text-2xl")}
+                    locale={lng}
+                    onClick={handleLinkClick} // Close menu on link click
+                  >
+                    {t(link.text)}
+                  </Link>
+                ))}
+              </ul>
+            </div>
+          </SheetContent>
+        )}
+      </Sheet>
+    </div>
         </div>
       </Container>
     </nav>

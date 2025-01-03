@@ -13,9 +13,11 @@ const Footer = () => {
             {/* Logo and Info */}
             <div className="lg:w:1-/2">
               <Link href="/">
-                <img
+                <Image
                   src="/assets/images/logos/main-logo.png"
                   className="w-full md:w-56 lg:border-b border-gray-500 pb-5"
+                  width={400}
+                  height={400}
                   alt="Saudina logo"
                 />
               </Link>
@@ -28,7 +30,7 @@ const Footer = () => {
             <div className="w-full pt-4 ">
               <div className="font-bold text-lg">{t("footer.followUs")}</div>
               <div className="flex gap-5 pt-4 items-center">
-                <Link target="_blank" href="https://www.tiktok.com/">
+                <Link target="_blank" href="https://x.com/saudi8china">
                   <Image
                     alt="Tiktok image"
                     width="30"
@@ -38,7 +40,7 @@ const Footer = () => {
                 </Link>
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/"
+                  href="https://x.com/saudi8china"
                   className="rounded-full flex justify-center items-center"
                 >
                   <Image
@@ -50,7 +52,7 @@ const Footer = () => {
                 </Link>
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/"
+                  href="https://x.com/saudi8china"
                   className="rounded-full flex justify-center items-center"
                 >
                   {" "}
@@ -63,7 +65,7 @@ const Footer = () => {
                 </Link>
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/onwardticket/"
+                  href="https://x.com/saudi8china"
                   className="rounded-full flex justify-center items-center"
                 >
                   {" "}
@@ -77,10 +79,9 @@ const Footer = () => {
 
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/"
+                  href="https://x.com/saudi8china"
                   className="rounded-full flex justify-center items-center"
                 >
-                  {" "}
                   <Image
                     width={45}
                     height={45}
@@ -91,14 +92,8 @@ const Footer = () => {
               </div>
 
             </div>
-
-            {/* <div className="text-[0.8rem] font-light leading-tight pt-2">
-              {t("footer.infoText")}
-            </div> */}
           </div>
         </div>
-        <div className="h-px bg-gray-400 w-full my-10"></div>
-        <p className="text-white text-center">{t("footer.copyright")}</p>
       </footer>
     </div>
   );

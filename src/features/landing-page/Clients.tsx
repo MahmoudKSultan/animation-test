@@ -84,7 +84,7 @@ export function Clients() {
     return (
       <Marquee
         autoFill={true}
-        speed={30}
+        speed={42}
         pauseOnHover
         className="mb-10"
         key={`marquee_${n}`}

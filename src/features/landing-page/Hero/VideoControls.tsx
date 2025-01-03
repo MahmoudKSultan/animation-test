@@ -3,11 +3,13 @@ import { Pause, Play, VolumeOff, Volume2 } from "lucide-react";
 
 // Use forwardRef to forward the ref from the parent
 interface VideoControlsProps {
+  // Define the type of videoRef here
   videoRef: React.RefObject<HTMLVideoElement | null>; // Allow videoRef to be null initially
 }
 
 export const VideoControls = forwardRef<HTMLVideoElement, VideoControlsProps>(
-  ({ videoRef }) => {
+  ({ videoRef }, /// <reference path="" />
+  ) => { // Make sure ref is passed as the second argument
     const [isPlaying, setIsPlaying] = useState(true);
     const [isMuted, setIsMuted] = useState(true);
 
