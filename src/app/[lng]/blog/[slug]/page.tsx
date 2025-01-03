@@ -15,14 +15,14 @@ interface Content {
 
 // Define the BlogPostProps interface
 interface BlogPostProps {
-  params: {
+  params: Promise<{
     lng: string;
     slug: string;
-  };
+  }>;
 }
 
 const BlogPost = async ({ params }: BlogPostProps) => {
-  const { lng: lang, slug } = params;
+  const { lng: lang, slug } = await params;
   console.log("Params:", lang, slug);
 
   // Define the post state with a default value

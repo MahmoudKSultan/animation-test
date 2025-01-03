@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(request: NextRequest, { params }: { params: any }) {
+export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
 
   const lang = searchParams.get("lang") || "en"; // Default to 'en' if no language is provided
@@ -36,7 +36,7 @@ export async function GET(request: NextRequest, { params }: { params: any }) {
         { status: 404 }
       );
     }
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: "Post not found" }, { status: 404 });
   }
 }
