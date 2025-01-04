@@ -108,4 +108,12 @@
         "This was the beginning of the story. Just as his ancestor built a home by the eternal spring thousands of years ago, Samir hopes to build a new bridge of values and culture, connecting Saudi Arabia and China for a better life for future generations. For Samir, Saudi Arabia is not just a huge market or an ancient land; it is a great story to be told, with an open invitation for the world to discover the essence of authentic Arab culture and the great Saudi ambition.",
         "A special invitation: If you are reading this story in China, remember that dreams know no boundaries of place or time. Just as water was the beginning of life in a barren land, your visit to Saudi Arabia may be the start of a new story that inspires the world. Saudi Arabia and its hospitable people eagerly await your arrival."
     ]
+   , "blog":
+    {
+   "reverse":"Back"
+    },
+
+    "bloglist":{
+     "news":" Latest News & Reports"
+    }
 }

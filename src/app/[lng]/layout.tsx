@@ -1,8 +1,6 @@
-// import type { Metadata } from "next";
 import { Geist, Geist_Mono, Cairo } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
-// import Container from "@/components/Container";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { LanguageProvider } from "@/components/LanguageChange";
