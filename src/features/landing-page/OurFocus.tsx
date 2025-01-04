@@ -26,7 +26,7 @@ const images = [
 function OurFocus() {
   const t = useTranslations("fields");
   return (
-    <div className="relative py-16">
+    <div className="relative ">
       <Container>
         <h2 className="text-4xl inline-block pb-2 font-bold mb-10 text-primary dark:text-white border-b-4 border-[#1E8022]">{t("title")}</h2>
         <div className="flex flex-wrap -mx-5">
