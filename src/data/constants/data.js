@@ -11,7 +11,7 @@ export const getTranslatedPosts = (lng) => {
     في سبتمبر من عام 2024، قام رئيس مجلس الدولة الصيني لي تشيانغ بزيارة إلى المملكة، حيث ترأس مع ولي العهد صاحب السمو الملكي الأمير محمد اجتماع الدورة الرابعة للجنة الصينية السعودية المشتركة رفيعة المستوى، واتفق الجانبان على تنظيم فعالية «العام الثقافي الصيني السعودي 2025م» ودفع التعاون والتبادل في مجالات الثقافة ومراكز الفكر والتعليم والإعلام والتبادل الشعبي ضمن هذا الإطار، مما يعزز التفاهم والصداقة بين شعبي البلدين. وفي الآونة الأخيرة، قام وزراء الثقافة والسياحة والإعلام السعوديون بزيارات إلى الصين، حيث أجروا مناقشات عميقة مع الجهات الصينية المعنية، كما وقع الطرفان سلسلة من الاتفاقيات في مجالات الثقافة، علم الآثار، التراث، السينما والإعلام، مما يضخ زخمًا جديدًا في التبادل الإنساني والثقافي بين البلدين.\
     شهدت العلاقات بين الصين والمملكة تبادلات مكثفة ونتائج مثمرة في العام الماضي. ففي الصين، تم تنظيم سلسلة من الفعاليات الناجحة مثل معرض «العلا: واحة العجائب في الجزيرة العربية”، ومعرض السفر السعودي، وليالي الفيلم السعودي، مما عرض للجمهور الصيني التراث الثقافي الغني والتقاليد الشعبية لشبه الجزيرة العربية. كما شاركت المملكة بصفتها ضيف شرف، الدورة الـ30 لمعرض بكين الدولي للكتاب 2024، مقدمة للجمهور الصيني قصصًا عن التراث الثقافي والتاريخي للسعودية، والملابس الفاخرة، القهوة والتمر، إضافة إلى آلات موسيقية تقليدية مثل العود. في السعودية، شارك رياضيون صينيون مشهورون مثل ما لونغ، وتشنغ تشين ون، وتشانغ تشيلي، ودينغ جون هوي في مسابقات مختلفة، وفازت الفرق الصينية بثلاثة ألقاب البطولة في بطولة العالم للرياضات الإلكترونية في نسختها الأولى. كما شاركت دور النشر الصينية بأكثر من 1000 كتاب ومنتج ثقافي في معرض الرياض الدولي للكتاب، وشاركت لأول مرة في الأسبوع السعودي الدولي للحرف اليدوية، حيث قدمت عروضاً ثقافية غنية أبهرت الزوار. يسعدنا أن نرى أن تزايد عدد الأصدقاء السعوديين الذين يزورون الصين لاستكشاف جمال طبيعتها، وتجربة الثقافة التقليدية، وتذوق المأكولات الصينية، والاستمتاع بالعادات والتقاليد الفريدة والجمال الطبيعي للأراضي الصينية. ومع إدراج المملكة وجهة سياحية لمجموعات السياح من الصين، أطلقت العديد من شركات الطيران رحلات مباشرة بين البلدين، إن شعبية السياحة في السعودية بين المواطنين الصينيين تتزايد بشكل ملحوظ.\
     يصادف هذا العام الذكرى الـ 35لإقامة العلاقات الدبلوماسية بين جمهورية الصين الشعبية والمملكة العربية السعودية، حيث ستشهد فعاليات رائعة على مدار العام في إطار «العام الثقافي الصيني السعودي». دعونا نعمل معًا على تعزيز التواصل والتعلم المتبادل بين الحضارتين العتيقتين الصينية والسعودية، ونتعاون في الحفاظ على قصة ذائعة الصيت في التاريخ على طريق الحرير الذي يمتد لآلاف السنين، ونبني مخطط أوسع للتبادل الإنساني والثقافي بين البلدين، مما يدفع «الاتصال بين القلوب» للشعبين إلى مرحلة جديدة من التقدم.",
-        authorName: "جريدة الرياض",
+        authorName: "تشانغ هوا - سفير جمهورية الصين الشعبية لدى المملكة",
         createdAt: "Jan 03, 2025",
         cover: "/assets/images/blog/blog1.jpg",
       },
@@ -49,7 +49,7 @@ export const getTranslatedPosts = (lng) => {
     تُظهر هذه الإنجازات أن التعاون بين السعودية والصين مبني على أسس صلبة وطموحات مشتركة. مع استمرار مشاريع التنمية في كلا البلدين، من المتوقع أن تتوسع مجالات التعاون لتشمل مجالات جديدة مثل الطاقة الخضراء، الأبحاث العلمية، وعلوم الفضاء. إن ما تحقق في 2024 هو استثمار حقيقي في المستقبل، يهدف إلى تحقيق تنمية مستدامة وتكامل إستراتيجي بين بلدين يملكان رؤية واضحة لمستقبل أفضل.\
     في نهاية العام، يصبح من الواضح أن العلاقات السعودية- الصينية ليست مجرد اتفاقيات مؤقتة، بل هي شراكة استراتيجية تقوم على المصالح المشتركة، الأرقام الملموسة، والطموحات التي تسعى لتحسين حياة الشعوب. هذه العلاقة المتينة تشكل نموذجًا للتعاون الدولي الذي يوازن بين النمو الاقتصادي، التقدم التكنولوجي، والتفاهم الثقافي، مما يمهد لمستقبل مشرق يعزز مكانة البلدين على الساحة العالمية.\
     ",
-        authorName: "صحيفة الوطن ",
+        authorName: "فهد عريشي  ",
         createdAt: "Jan 04, 2025",
         cover: "/assets/images/blog/blog3.webp",
       },
@@ -75,7 +75,7 @@ export const getTranslatedPosts = (lng) => {
     وأضاف "في مجال التعليم، بدأ مزيد من السعوديين في دراسة اللغة الصينية، كما تم إطلاق تخصصات اللغة الصينية في 4 جامعات سعودية في الوقت الراهن، وتدشين وتشغيل معهد كونفوشيوس في جامعة الأمير سلطان، وتزايدت أعداد المدارس والمؤسسات الاجتماعية في فتح مقررات اختيارية للغة الصينية".\
     وأكد أن توسع التعاون والتبادل في مجال العلوم الإنسانية بين البلدين سيعزز الصداقة بين الشعوب ويعمق التفاهم المتبادل، ما يسهم في تنمية قطاع السياحة بين البلدين.\
     ',
-        authorName: "صحيفة الاقتصادية ",
+        authorName: "محمود لعوتة  ",
         createdAt: "Jan 04, 2025",
         cover: "/assets/images/blog/blog4.jpg",
       },
@@ -122,7 +122,7 @@ export const getTranslatedPosts = (lng) => {
           These achievements show that the cooperation between Saudi Arabia and China is built on solid foundations and shared ambitions. With ongoing development projects in both countries, it is expected that the areas of collaboration will expand to include new fields such as green energy, scientific research, and space sciences. What has been achieved in 2024 is a real investment in the future, aimed at achieving sustainable development and strategic integration between two countries with a clear vision for a better future.\
           At the end of the year, it is clear that Saudi-China relations are not merely temporary agreements but a strategic partnership based on mutual interests, tangible results, and ambitions aimed at improving the lives of their peoples. This strong relationship serves as a model for international cooperation that balances economic growth, technological advancement, and cultural understanding, paving the way for a bright future that enhances the status of both countries on the global stage."
         ,
-        "authorName": "Al-Watan Newspaper",
+        "authorName": "Fahd Arishi",
         "createdAt": "Jan 04, 2025",
         "cover": "/assets/images/blog/blog3.webp"
       },
@@ -147,7 +147,7 @@ export const getTranslatedPosts = (lng) => {
           He added, 'In education, more Saudis have started studying the Chinese language, and Chinese language programs have been launched at four Saudi universities, with the establishment and operation of the Confucius Institute at Prince Sultan University. The number of schools and social institutions offering Chinese language elective courses has also increased.'\
           He confirmed that the expansion of cooperation and exchange in the humanities field between the two countries will enhance friendship between the peoples and deepen mutual understanding, contributing to the development of the tourism sector between the two countries."
         ,
-        "authorName": "Al-Iqtisadiya Newspaper",
+        "authorName": "Mahmoud Laouta",
         "createdAt": "Jan 04, 2025",
         "cover": "/assets/images/blog/blog4.jpg"
       }
@@ -196,7 +196,7 @@ export const getTranslatedPosts = (lng) => {
           这些成就表明，沙特与中国的合作建立在坚实的基础和共同的雄心之上。随着两国发展项目的推进，预计合作领域将扩展到包括绿色能源、科学研究和空间科学等新领域。2024年所取得的成果是对未来的真实投资，旨在实现可持续发展和两国之间的战略整合，展现出两国对美好未来的清晰愿景。\
           在年底，可以明显看出沙特与中国的关系不仅仅是暂时的协议，而是一种战略伙伴关系，基于共同利益、切实成果和旨在改善两国人民生活的雄心。这种坚实的关系为国际合作树立了榜样，平衡了经济增长、技术进步和文化理解，为两国在全球舞台上提升地位铺平了道路。"
         ,
-        "authorName": "Al-Watan Newspaper",
+        "authorName": "法赫德·阿里希",
         "createdAt": "Jan 04, 2025",
         "cover": "/assets/images/blog/blog3.webp"
       },
@@ -222,7 +222,7 @@ export const getTranslatedPosts = (lng) => {
           他确认，两国在文化领域的合作与交流将增强两国人民之间的友谊，深化相互理解，有助于推动两国旅游业的发展。"
         ,
         "authorName": "经济日报",
-        "createdAt": "2025年1月4日",
+        "createdAt": "马哈茂德·劳塔",
         "cover": "/assets/images/blog/blog4.jpg"
       }
     ],

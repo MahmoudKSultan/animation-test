@@ -1,6 +1,7 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 export const Cards = () => {
@@ -61,7 +62,9 @@ export const Cards = () => {
             }}
             ref={planRef}
           >
-            <img
+            <Image
+             width={100}
+             height={100}
               alt="plane"
               loading="lazy"
               decoding="async"
@@ -112,7 +115,9 @@ export const Cards = () => {
                 </div>
                 {/* Optional Runway Image */}
                 <div className="absolute h-[100vh] w-[40px] md:h-[2000px] md:w-[80px] -mt-1 ltr:right-7 ltr:md:right-12 rtl:left-7 rtl:md:left-12">
-                  <img
+                  <Image
+                   width={100}
+                   height={100}
                     alt="runway"
                     loading="lazy"
                     decoding="async"
@@ -185,7 +190,9 @@ export const Cards = () => {
                     </div> */}
                   </div>
                   <div className="absolute h-[100vh] w-[40px] md:h-[2000px] md:w-[80px] -mt-1 ltr:right-7 ltr:md:right-12 rtl:left-7 rtl:md:left-12">
-                    <img
+                    <Image
+                     width={100}
+                     height={100}
                       alt="runway"
                       loading="lazy"
                       decoding="async"

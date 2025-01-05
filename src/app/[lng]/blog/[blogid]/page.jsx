@@ -44,14 +44,13 @@ const page = ({ params }) => {
     <div className="w-full flex justify-center ">
       {blog ? (
         <div className="mt-[30px] Container mx-auto lg:px-40 md:px-10">
-          <header className=" flex justify-start lg:gap-48 items-center">
             <Link href="/blog" className="flex items-center text-[#238023]">
               <span className="">
-                {/* <BsChevronRight />{" "} */}
                 <ChevronRight />
               </span>
               <span>{t("reverse")}</span>
             </Link>
+          <header className=" flex justify-center  items-center">
 
             <h1 className=" text-primary font-bold text-2xl text-center py-12  ">
               {blog.title}

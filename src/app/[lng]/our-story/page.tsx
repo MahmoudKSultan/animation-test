@@ -27,7 +27,7 @@ export default function StoryPage() {
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start">
         {/* Text Section */}
         <div className="space-y-5 md:w-1/2">
-          {paragraphs.slice(0, 2).map((paragraph: string, index: number) => (
+          {paragraphs.slice(0, 3).map((paragraph: string, index: number) => (
             <p key={index}>{paragraph}</p>
           ))}
           {!showFullStory && (
@@ -41,7 +41,7 @@ export default function StoryPage() {
 
           {showFullStory && (
             <div>
-              {paragraphs.slice(6).map((paragraph: string, index: number) => (
+              {paragraphs.slice(3).map((paragraph: string, index: number) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </div>

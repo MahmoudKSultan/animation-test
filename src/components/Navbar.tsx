@@ -39,13 +39,13 @@ function Navbar() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-5">
             <Link href={`/${lng}`} className="flex items-center  " locale={lng}>
-              <Image
-                src="/assets/images/logos/main-logo.png"
-                alt="saudina logo"
-                width={150}
-                height={150}
-                className=""
-              />
+            <Image
+              src="/assets/images/logos/main-logo.png"
+              alt="saudina logo"
+              width={150}
+              height={150}
+              quality={100} // Higher quality
+            />
             </Link>
             <div className="hidden md:flex gap-6 text-lg font-medium">
               {links.map((link) => (

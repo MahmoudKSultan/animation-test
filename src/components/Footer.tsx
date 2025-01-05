@@ -30,7 +30,7 @@ const Footer = () => {
             <div className="w-full pt-4 ">
               <div className="font-bold text-lg">{t("footer.followUs")}</div>
               <div className="flex gap-5 pt-4 items-center">
-                <Link target="_blank" href="https://x.com/saudi8china">
+                <Link target="_blank" href="https://www.tiktok.com/">
                   <Image
                     alt="Tiktok image"
                     width="30"
@@ -38,6 +38,7 @@ const Footer = () => {
                     src="/assets/images/logos/tiktok.png"
                   />
                 </Link>
+
                 <Link
                   target="_blank"
                   href="https://x.com/saudi8china"
@@ -52,7 +53,7 @@ const Footer = () => {
                 </Link>
                 <Link
                   target="_blank"
-                  href="https://x.com/saudi8china"
+                  href="https://www.wechat.com/"
                   className="rounded-full flex justify-center items-center"
                 >
                   {" "}
@@ -65,7 +66,7 @@ const Footer = () => {
                 </Link>
                 <Link
                   target="_blank"
-                  href="https://x.com/saudi8china"
+                  href="https://m.weibo.cn/"
                   className="rounded-full flex justify-center items-center"
                 >
                   {" "}
@@ -79,7 +80,7 @@ const Footer = () => {
 
                 <Link
                   target="_blank"
-                  href="https://x.com/saudi8china"
+                  href="https://www.xiaohongshu.com/"
                   className="rounded-full flex justify-center items-center"
                 >
                   <Image
