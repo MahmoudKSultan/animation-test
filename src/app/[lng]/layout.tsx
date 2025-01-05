@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/providers";
 import Navbar from "@/components/Navbar";
 import ScrollTop from "@/components/ScrollTop";
 import SplashScreen from "@/components/SplashScreen";
-
+export { generateMetadata } from "@/lib/utils";
 const cairo = Cairo({
   variable: "--font-cairo",
   subsets: ["latin"],
