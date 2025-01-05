@@ -23,8 +23,6 @@ const t = useTranslations("bloglist");
         <>
         <h1 className="text-3xl font-[600] mb-[30px] mx-2">
         {t("news")}
-            {/* أحدث 
-        الأخبار وتقارير */}
         </h1>
         <div className='blogList-wrap grid xl:grid-cols-3 gap-8 max-sm:grid-cols-1 sm:grid-cols-2 mx-5'>
             {currentItems.map((blog, index) => (

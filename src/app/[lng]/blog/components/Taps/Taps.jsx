@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import React from 'react';
+import { useTranslations } from "next-intl";
 
 const Taps = () => {
     const [selectedTab, setSelectedTab] = useState(1);
+
+const t = useTranslations('tages');
 const tabs = [
-  { id: 1, title: 'مقالات', content: 'احترام تنوع حضارات العالم وتعزيز القيم المشتركة' },
-  { id: 2, title: 'معلومات', content: '' },
+  { id: 1, title: t('tagesName'), content: 'احترام تنوع حضارات العالم وتعزيز القيم المشتركة' },
+  { id: 2, title: t('tagesName2'), content: '' },
 ];
     return (
 <div className="w-full">

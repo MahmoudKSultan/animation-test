@@ -1,8 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import EmptyList from "../components/EmptyList/EmptyList";
-// import { FaShare } from "react-icons/fa6";
-// import { BsChevronRight } from "react-icons/bs";
 import Taps from "../components/Taps/Taps";
 import Link from "next/link";
 import { getTranslatedPosts } from "@/data/constants/data";
