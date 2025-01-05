@@ -115,5 +115,9 @@
 
     "bloglist":{
      "news":" Latest News & Reports"
-    }
+    },"tages": {
+    "tagesName": "Information",
+    "tagesName2": "Articles",
+    "tagescontent":"Respecting the diversity of world civilizations and promoting common values"
+}
 }

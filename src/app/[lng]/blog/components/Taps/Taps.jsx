@@ -7,7 +7,7 @@ const Taps = () => {
 
 const t = useTranslations('tages');
 const tabs = [
-  { id: 1, title: t('tagesName'), content: 'احترام تنوع حضارات العالم وتعزيز القيم المشتركة' },
+  { id: 1, title: t('tagesName'), content:t('tagescontent') },
   { id: 2, title: t('tagesName2'), content: '' },
 ];
     return (

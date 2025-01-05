@@ -114,5 +114,11 @@
 
     "bloglist":{
      "news":"最新新闻和报道"
-    }
+    },
+    "tages": {
+    "tagesName": "信息",
+    "tagesName2": "文章",
+    "tagescontent":"尊重世界文明多样性，弘扬共同价值观"
+
+}
 }
