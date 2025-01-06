@@ -18,9 +18,7 @@ export function LanguageChange() {
   // Function to handle language change
   const handleLanguageChange = (value: string) => {
     // Redirect to the new language URL
-    router.push(
-      `/${value}${window.location.pathname.replace(/^\/[a-z]{2}/, "")}`
-    );
+    router.push(`/${value}${pathname.slice(3)}`);
   };
 
   return (

@@ -10,7 +10,8 @@ export const SplashScreen = () => {
       setIsLoading(false);
     };
 
-    window.addEventListener("load", handleLoad);
+    if (window && typeof window !== "undefined")
+      window.addEventListener("load", handleLoad);
     setTimeout(() => {
       // just in case
       setIsLoading(false);
@@ -37,7 +38,7 @@ export const SplashScreen = () => {
             priority
             sizes="(max-width: 768px) 100vw, 400px"
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain"
-            />
+          />
         </div>
       </div>
     </div>

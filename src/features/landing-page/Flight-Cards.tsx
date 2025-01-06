@@ -23,7 +23,7 @@ export const Cards = () => {
     const isScrollingDown = () => {
       let goingDown = false;
 
-      const scrollPosition = window.pageYOffset;
+      const scrollPosition = window && window.pageYOffset;
 
       if (scrollPosition > previousScrollPosition) {
         goingDown = true;
@@ -48,9 +48,13 @@ export const Cards = () => {
   return (
     <div className="container mx-auto  px-5">
       <div className="w-full max-w-7xl  pb-36 pt-16 mx-auto">
-        <div className="mb-10 text-4xl inline-block pb-2 font-bold  text-primary dark:text-white border-b-4 border-[#1E8022]">{t("title")}</div>
-        <p className="text-xl mb-10 font-medium text-muted-foreground/90">{t("subtitle")}</p>
-        <div className="flex max-w-5xl flex-col lg:mr-48 flex-grow items-center w-full relative">
+        <div className="mb-10 text-4xl inline-block pb-2 font-bold  text-primary dark:text-white border-b-4 border-[#1E8022]">
+          {t("title")}
+        </div>
+        <p className="text-xl mb-10 font-medium text-muted-foreground/90">
+          {t("subtitle")}
+        </p>
+        <div className="flex max-w-5xl flex-col flex-grow items-center w-full relative mx-auto">
           {/* Plane Icon */}
           <motion.div
             className="sticky w-12 h-12 md:w-[4.4rem] md:h-[4.4rem] self-end ltr:mr-6 ltr:md:mr-[53px] rtl:ml-6 rtl:md:ml-[53px] rotate-0 z-50"
@@ -63,8 +67,8 @@ export const Cards = () => {
             ref={planRef}
           >
             <Image
-             width={100}
-             height={100}
+              width={100}
+              height={100}
               alt="plane"
               loading="lazy"
               decoding="async"
@@ -116,8 +120,8 @@ export const Cards = () => {
                 {/* Optional Runway Image */}
                 <div className="absolute h-[100vh] w-[40px] md:h-[2000px] md:w-[80px] -mt-1 ltr:right-7 ltr:md:right-12 rtl:left-7 rtl:md:left-12">
                   <Image
-                   width={100}
-                   height={100}
+                    width={100}
+                    height={100}
                     alt="runway"
                     loading="lazy"
                     decoding="async"
@@ -191,8 +195,8 @@ export const Cards = () => {
                   </div>
                   <div className="absolute h-[100vh] w-[40px] md:h-[2000px] md:w-[80px] -mt-1 ltr:right-7 ltr:md:right-12 rtl:left-7 rtl:md:left-12">
                     <Image
-                     width={100}
-                     height={100}
+                      width={100}
+                      height={100}
                       alt="runway"
                       loading="lazy"
                       decoding="async"

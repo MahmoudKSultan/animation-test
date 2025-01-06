@@ -17,14 +17,13 @@ export function Hero() {
           playsInline
           className="w-full  h-screen lg:h-[700px] object-cover"
           ref={videoRef}
-        // style={{ backgroundSize: "cover" }}
+          // style={{ backgroundSize: "cover" }}
         >
           <source src="/assets/hero.mp4" type="video/mp4"></source>
         </video>
         {/* small overlay */}
         <div className="absolute  -bottom-1 md:bottom-0 left-0 w-full h-screen to-black bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(0,0,0,0.7))] "></div>
         <VideoControls videoRef={videoRef} />
-
       </div>
       <VisionMission />
     </>
@@ -40,13 +39,13 @@ const VisionMission = () => {
         <div className="flex justify-start items-start">
           {/* Mission Section */}
           <div className="text-start font-semibold">
-            <div className="flex justify-start">
-            </div>
-            <h2 className="text-4xl font-bold mb-8   inline-block pb-2   text-white border-b-4 border-[#1E8022]">{t("mission.title")}</h2>
+            <div className="flex justify-start"></div>
+            <h2 className="text-4xl font-bold mb-8   inline-block pb-2   text-white border-b-4 border-[#1E8022]">
+              {t("mission.title")}
+            </h2>
             <blockquote
-              className="text-xl"
+              className="text-xl w-[220px] md:w-full"
               style={{
-                width: window.innerWidth < 768 ? "220px" : "100%", // عرض ديناميكي
                 whiteSpace: "normal", // الالتفاف على الشاشات الصغيرة
                 lineHeight: "1.5", // تحسين تباعد الأسطر
               }}

@@ -1,9 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 
 const BlogItem = ({
   blog: { description, title, createdAt, authorName, cover, category, id, key },
 }) => {
+  const locale = useLocale();
   return (
     <div key={key} className="flex flex-col bg-white rounded-lg drop-shadow-md">
       <div className="relative">
@@ -20,7 +22,7 @@ const BlogItem = ({
         <p className="text-gray-600 font-semibold">{createdAt}</p>
         <Link
           className="hover:text-black  text-primary font-bold py-1.5 px-3 rounded-md flex justify-center items-center gap-1"
-          href={`/blog/${id}`}
+          href={`/${locale}/blog/${id}`}
         >
           <h3 className="text-lg flex-1 font-semibold mt-2 mb-3">{title}</h3>
         </Link>
