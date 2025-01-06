@@ -114,7 +114,8 @@
     ],
     "blog":
        {
-      "reverse":"الرجوع"
+      "reverse":"الرجوع",
+      "posted":"تم نشر بواسطة"
        },
 
        "bloglist":{

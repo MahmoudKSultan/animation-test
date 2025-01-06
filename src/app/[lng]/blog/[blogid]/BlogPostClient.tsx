@@ -54,7 +54,7 @@ const BlogPageClient = ({ blog, lng }: BlogPageClientTypes) => {
         <div className="flex justify-between items-center mt-3 mx-2 min-sm:mx-5 max-sm:mx-5 text-[#858484] font-bold">
           <div className="flex justify-center gap-3 items-center">
             <div>
-              نشرت بواسطة
+              {t("posted")}
               <Link className="mr-1 text-blue-600" href="/blog">
                 {blog.authorName}
               </Link>

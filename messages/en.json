@@ -111,7 +111,9 @@
         "A special invitation: If you are reading this story in China, remember that dreams know no boundaries of place or time. Just as water was the beginning of life in a barren land, your visit to Saudi Arabia may be the start of a new story that inspires the world. Saudi Arabia and its hospitable people eagerly await your arrival."
     ],
     "blog": {
-        "reverse": "Back"
+        "reverse": "Back",
+        "posted":"posted by"
+
     },
     "bloglist": {
         "news": " Latest News & Reports"

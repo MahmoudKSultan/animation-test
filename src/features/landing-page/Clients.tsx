@@ -81,6 +81,7 @@ export function Clients() {
       </div> */}
 <div className="md:hidden px-5 masked" dir="ltr">
   {[0, 1, 2].map((n) => {
+    const logosPerGroup = Math.ceil(logos.length / 3); // 40 / 3 = 14 شعارات تقريبًا لكل مجموعة
     return (
       <Marquee
         autoFill={true}
@@ -90,7 +91,7 @@ export function Clients() {
         key={`marquee_${n}`}
         direction={n % 2 === 0 ? "right" : "left"}
       >
-        {logos.slice(n * 10, (n + 1) * 10).map((logo, idx) => (
+        {logos.slice(n * logosPerGroup, (n + 1) * logosPerGroup).map((logo, idx) => (
           <Image
             src={`/assets/images/partners/${logo}`}
             width={45}
