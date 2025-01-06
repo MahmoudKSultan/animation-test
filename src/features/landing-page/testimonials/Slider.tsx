@@ -22,12 +22,9 @@ export function Slider() {
   const dir = usePathname().includes("ar") ? "rtl" : "ltr";
 
   return (
-    <div className="-mt-20 mb-16">
+    <div className="my-16">
       <Container>
-        <div
-          className="w-full max-w-7xl mx-auto overflow-visible mt-80"
-          dir={dir}
-        >
+        <div className="w-full max-w-7xl mx-auto overflow-visible" dir={dir}>
           {/* Title */}
           <div className=" ">
             <div className="mb-10 text-4xl inline-block pb-2 font-bold  text-primary dark:text-white border-b-4 border-[#1E8022]">

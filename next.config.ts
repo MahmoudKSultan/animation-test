@@ -1,10 +1,15 @@
-const createNextIntlPlugin = require("next-intl/plugin");
+import { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    output: 'export',
+const nextConfig: NextConfig = {
+  // static export configuration:
+  output: "export",
+  trailingSlash: true,
+  skipTrailingSlashRedirect: true,
+  images: { unoptimized: true },
 };
 
-module.exports = withNextIntl(nextConfig);
+export default withNextIntl(nextConfig);

@@ -15,8 +15,6 @@ export async function generateMetadata({
 
   // Load translations for the specific locale
   const messages = (await import(`../../messages/${lng}.json`)).default;
-  console.log(lng);
-  console.log(messages);
 
   // Create a translator instance
   const t = createTranslator({ locale: lng, messages });

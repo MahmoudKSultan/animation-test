@@ -43,6 +43,7 @@
     },
     "inspirations": {
         "title": "Our Fields of Work",
+        "subtitle": "We focus on marketing partnerships, technical projects, consulting, and investment.",
         "cardTitles": [
             "Emerging Projects",
             "Small Businesses",
@@ -84,7 +85,8 @@
         "copyright": "All rights reserved © 2025"
     },
     "testimonials": {
-        "title": "Visual Nutrition"
+        "title": "Visual Nutrition",
+        "subtitle": "Visual content showcasing tours for Chinese tourists in Saudi Arabia, highlighting unique tourist, cultural, and heritage landmarks."
     },
     "our-story": [
         "Between the silent mountains and the eternal spring, the beginning of a story.",
@@ -107,17 +109,16 @@
         "Inspired by this story, Samir returned to Riyadh with a genuine dream to write a new chapter in his story. He met his friend Majid and presented the golden egg, saying: 'I promise to compensate your initial investment manifold in the coming years and to work diligently on our project. I’ve learned lessons from past experiences, and now the vision is clear.'",
         "This was the beginning of the story. Just as his ancestor built a home by the eternal spring thousands of years ago, Samir hopes to build a new bridge of values and culture, connecting Saudi Arabia and China for a better life for future generations. For Samir, Saudi Arabia is not just a huge market or an ancient land; it is a great story to be told, with an open invitation for the world to discover the essence of authentic Arab culture and the great Saudi ambition.",
         "A special invitation: If you are reading this story in China, remember that dreams know no boundaries of place or time. Just as water was the beginning of life in a barren land, your visit to Saudi Arabia may be the start of a new story that inspires the world. Saudi Arabia and its hospitable people eagerly await your arrival."
-    ]
-   , "blog":
-    {
-   "reverse":"Back"
+    ],
+    "blog": {
+        "reverse": "Back"
     },
-
-    "bloglist":{
-     "news":" Latest News & Reports"
-    },"tages": {
-    "tagesName": "Information",
-    "tagesName2": "Articles",
-    "tagescontent":"Respecting the diversity of world civilizations and promoting common values"
-}
+    "bloglist": {
+        "news": " Latest News & Reports"
+    },
+    "tages": {
+        "tagesName": "Information",
+        "tagesName2": "Articles",
+        "tagescontent": "Respecting the diversity of world civilizations and promoting common values"
+    }
 }

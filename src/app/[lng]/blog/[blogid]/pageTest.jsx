@@ -6,9 +6,27 @@ import Link from "next/link";
 import { getTranslatedPosts } from "@/data/constants/data";
 import { useTranslations } from "next-intl";
 import { ChevronRight, Share } from "lucide-react";
+import { useParams } from "next/navigation";
+
+export async function generateStaticParams() {
+  // Supported languages
+  const languages = ["ar", "en", "zh"];
+  const params = [];
+
+  // Loop through each language and its posts
+  languages.forEach((lng) => {
+    const posts = getTranslatedPosts(lng);
+    posts.forEach((post) => {
+      params.push({ lng, blogid: post.id.toString() });
+    });
+  });
+
+  return params;
+}
 
 const page = ({ params }) => {
   const [blog, setBlog] = useState(null);
+  const paramsHooks = useParams();
   const [unwrappedParams, setUnwrappedParams] = useState(null);
 
   // Unwrap params using React.use()
@@ -26,11 +44,17 @@ const page = ({ params }) => {
   }, [params]);
 
   useEffect(() => {
+    console.log("this is params");
+    console.log(paramsHooks);
+
     if (unwrappedParams && unwrappedParams.blogid) {
       // Find the blog by converting blogid to an integer
       const foundBlog = getTranslatedPosts(unwrappedParams.lng).find(
         (blog) => blog.id === parseInt(unwrappedParams.blogid)
       );
+      console.log("this is blog");
+      console.log(foundBlog);
+
       if (foundBlog) {
         setBlog(foundBlog);
       } else {
@@ -44,14 +68,13 @@ const page = ({ params }) => {
     <div className="w-full flex justify-center ">
       {blog ? (
         <div className="mt-[30px] Container mx-auto lg:px-40 md:px-10">
-            <Link href="/blog" className="flex items-center text-[#238023]">
-              <span className="">
-                <ChevronRight />
-              </span>
-              <span>{t("reverse")}</span>
-            </Link>
+          <Link href="/blog" className="flex items-center text-[#238023]">
+            <span className="">
+              <ChevronRight />
+            </span>
+            <span>{t("reverse")}</span>
+          </Link>
           <header className=" flex justify-center  items-center">
-
             <h1 className=" text-primary font-bold text-2xl text-center py-12  ">
               {blog.title}
             </h1>
