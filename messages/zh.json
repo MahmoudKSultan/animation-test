@@ -1,59 +1,59 @@
 {
     "metadata": {
-        "title": "Saudina - 通过旅游、文化和商业连接沙特阿拉伯与中国",
-        "description": "Saudina 致力于使沙特阿拉伯成为中国游客的首选目的地。我们专注于在电子商务、文化、旅游和媒体领域促进合作伙伴关系，以推动共同成长和成功。探索我们的使命、愿景和工作领域，同时与合适的资源联系，以促进新兴项目和创新解决方案。"
+        "title": "SAUDIANA——通过旅游、文化和商业将沙特与中国联系起来",
+        "description": "SAUDIANA致力于使沙特阿拉伯成为中国游客的首选目的地。我们专注于加强电子商务、文化、旅游和媒体领域的合作伙伴关系，以推动相互增长和成功。探索我们的使命、愿景和工作领域，同时为初创企业和创新解决方案提供合适的资源。"
     },
     "navbar": {
-        "main": "主页",
+        "main": "首页",
         "ourStory": "我们的故事",
         "boardOfDirectors": "董事会",
-        "blog": "新闻报道",
+        "blog": "报告",
         "contactUs": "联系我们"
     },
     "hero": {
         "vision": {
             "title": "愿景",
-            "description": "使沙特阿拉伯成为中国人民的首选旅游目的地"
+            "description": "使沙特阿拉伯成为中国人民最喜欢的旅游目的地"
         },
         "mission": {
-            "title": "使命",
-            "description": "每年吸引1000万中国游客前往沙特阿拉伯"
+            "title": "任务",
+            "description": "每年吸引1000万中国游客"
         }
     },
     "clients": {
-        "title": "我们的合作伙伴",
-        "subtitle": "我们的目标明确，我们将与最优秀的伙伴一起努力实现它."
+        "title": "合作伙伴",
+        "subtitle": "我们的目标很明确，我们将与最好的合作伙伴共同努力实现这一目标."
     },
     "contact-form": {
-        "title": "今天联系我们",
-        "address": "公司地址",
-        "name_placeholder": "姓名",
-        "email_placeholder": "example@mail.com",
-        "message_placeholder": "在这里输入您的消息...",
-        "button": "发送"
+        "title": "联系我们",
+        "address": "公司的地址",
+        "name_placeholder": "请输入您的姓名",
+        "email_placeholder": "example@mail.com 邮箱",
+        "message_placeholder": "留言 ...",
+        "button": "提交"
     },
     "fields": {
-        "title": "我们的关注领域",
+        "title": "我们专注的领域",
         "cols": [
-            "电子商务",
+            "旅游 ",
             "文化",
-            "旅游",
-            "媒体"
+            "媒体",
+            "电子商务"
         ]
     },
     "inspirations": {
-        "title": "我们的工作领域",
-        "subtitle": "我们专注于营销合作、技术项目、咨询和投资。",
+        "title": "工作领域",
+        "subtitle": "我们专注于营销合作伙伴关系、技术项目、咨询和投资",
         "cardTitles": [
-            "新兴项目",
-            "小型企业",
-            "中型企业"
+            "初创企业 ",
+            "小型企业 ",
+            "中型项目"
         ],
         "cardSubtitles": [
-            "基础套餐",
-            "建设创新的技术项目",
+            "优秀的营销合作伙伴关系",
+            "技术和发展项目",
             "提供管理咨询",
-            "与项目愿景相关的新兴项目的投资"
+            "投资与 saudina愿景相关的初创公司"
         ],
         "cardDescriptions": [
             [

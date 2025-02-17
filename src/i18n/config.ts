@@ -1,7 +1,7 @@
 import { LocalePrefix } from "next-intl/routing";
 
 export const AVAILABLE_LOCALES = ["en", "ar", "zh"] as const;
-export const DEFAULT_LOCALE = "ar";
+export const DEFAULT_LOCALE = "zh";
 
 export const localePrefix = "always" satisfies LocalePrefix;
 export const locales = AVAILABLE_LOCALES;

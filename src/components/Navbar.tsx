@@ -16,7 +16,7 @@ import { useParams } from "next/navigation";
 export const links = [
   { href: "/", text: "main" },
   { href: "/our-story", text: "ourStory" },
-  { href: "/board-of-directors", text: "boardOfDirectors" },
+  { href: "/", text: "boardOfDirectors" },
   { href: "/blog", text: "blog" },
   { href: "#contact", text: "contactUs" },
 ];

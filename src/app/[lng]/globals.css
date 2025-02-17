@@ -79,3 +79,124 @@
 .clip-path-cut-corner {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0 80%);
 }
+
+/* Moema */
+.button--moema {
+	-webkit-transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.button--moema::before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	bottom: -20px;
+	right: -20px;
+	background: inherit;
+	border-radius: 50px;
+	z-index: -1;
+	opacity: 0.4;
+	-webkit-transform: scale3d(0.8, 0.5, 1);
+	transform: scale3d(0.8, 0.5, 1);
+}
+
+.button--moema:hover {
+	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	-webkit-animation: anim-moema-1 0.3s forwards;
+	animation: anim-moema-1 0.3s forwards;
+}
+
+.button--moema:hover::before {
+	-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+	animation: anim-moema-2 0.3s 0.3s forwards;
+}
+@-webkit-keyframes anim-moema-1 {
+	60% {
+		-webkit-transform: scale3d(0.8, 0.8, 1);
+		transform: scale3d(0.8, 0.8, 1);
+	}
+	85% {
+		-webkit-transform: scale3d(1.1, 1.1, 1);
+		transform: scale3d(1.1, 1.1, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes anim-moema-1 {
+	60% {
+		-webkit-transform: scale3d(0.8, 0.8, 1);
+		transform: scale3d(0.8, 0.8, 1);
+	}
+	85% {
+		-webkit-transform: scale3d(1.1, 1.1, 1);
+		transform: scale3d(1.1, 1.1, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@-webkit-keyframes anim-moema-2 {
+	to {
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes anim-moema-2 {
+	to {
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes bounce-rotated {
+  0%, 100% {
+    transform: rotate(160deg) translateY(0);
+  }
+  50% {
+    transform: rotate(160deg) translateY(-20px);
+    -webkit-transform: rotate(160deg) translateY(-20px);
+    -moz-transform: rotate(160deg) translateY(-20px);
+    -ms-transform: rotate(160deg) translateY(-20px);
+    -o-transform: rotate(160deg) translateY(-20px);
+}
+}
+
+/* السهم العادي */
+.arrow-right {
+  animation: bounce-rotated 1s infinite;
+  transform: rotate(160deg);
+  -webkit-animation: bounce-rotated 1s infinite;
+}
+@keyframes bounce-rotated-mirrored  {
+  0%, 100% {
+    transform: rotate(20deg) translateY(0) scale(-1);
+    -webkit-transform: rotate(20deg) translateY(0) scale(-1);
+    -moz-transform: rotate(20deg) translateY(0) scale(-1);
+    -ms-transform: rotate(20deg) translateY(0) scale(-1);
+    -o-transform: rotate(20deg) translateY(0) scale(-1);
+}
+  50% {
+    transform: rotate(20deg) translateY(-20px) scale(-1);
+    -webkit-transform: rotate(20deg) translateY(-20px) scale(-1);
+    -moz-transform: rotate(20deg) translateY(-20px) scale(-1);
+    -ms-transform: rotate(20deg) translateY(-20px) scale(-1);
+    -o-transform: rotate(20deg) translateY(-20px) scale(-1);
+}
+}
+
+/* السهم المعكوس */
+.arrow-left {
+  animation: bounce-rotated-mirrored 1s infinite;
+  transform: rotate(20deg)  ;
+  -webkit-transform: rotate(20deg)  ;
+  -moz-transform: rotate(20deg)  ;
+  -ms-transform: rotate(20deg)  ;
+  -o-transform: rotate(20deg)  ;
+  
+}

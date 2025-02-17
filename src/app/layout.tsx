@@ -22,13 +22,11 @@ export default function RootLayout({
   return (
     <html
       lang={DEFAULT_LOCALE}
-      // className={`some css classes will come here, probably`}
+      // className={`some css classes will come here, probably`}     <SplashScreen />
     >
       <body
         className={`ltr:${geistSans.variable} ltr:${geistMono.variable} ${cairo.className} antialiased `}
       >
-        <SplashScreen />
-
         {children}
       </body>
     </html>
